@@ -22,6 +22,9 @@
 		CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AD52531C77E008D2FCB /* Event.swift */; };
 		CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0ADD2531DFD1008D2FCB /* ConcertView.swift */; };
 		CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */; };
+		CAFF0AE92531FAD9008D2FCB /* LeadingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AE82531FAD9008D2FCB /* LeadingModifier.swift */; };
+		CAFF0AEE25320028008D2FCB /* EventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AED25320028008D2FCB /* EventDetails.swift */; };
+		CAFF0AF125320252008D2FCB /* TicketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AF025320252008D2FCB /* TicketPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		CAFF0AD52531C77E008D2FCB /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		CAFF0ADD2531DFD1008D2FCB /* ConcertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertView.swift; sourceTree = "<group>"; };
 		CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRecommendationView_Home.swift; sourceTree = "<group>"; };
+		CAFF0AE82531FAD9008D2FCB /* LeadingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingModifier.swift; sourceTree = "<group>"; };
+		CAFF0AED25320028008D2FCB /* EventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetails.swift; sourceTree = "<group>"; };
+		CAFF0AF025320252008D2FCB /* TicketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPrice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,8 @@
 				CAFF0AC02531A2E5008D2FCB /* HomeView.swift */,
 				CAFF0AD12531C4E9008D2FCB /* BannerView_Home.swift */,
 				CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */,
-				CAFF0ADD2531DFD1008D2FCB /* ConcertView.swift */,
+				CAFF0AEB2531FE54008D2FCB /* Concert View */,
+				CAFF0AE82531FAD9008D2FCB /* LeadingModifier.swift */,
 				CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */,
 				CAFF0AC52531A38F008D2FCB /* TicketView.swift */,
 				CAFF0AC82531A39A008D2FCB /* NotificationView.swift */,
@@ -116,6 +123,16 @@
 				CAFF0AD52531C77E008D2FCB /* Event.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CAFF0AEB2531FE54008D2FCB /* Concert View */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF0ADD2531DFD1008D2FCB /* ConcertView.swift */,
+				CAFF0AED25320028008D2FCB /* EventDetails.swift */,
+				CAFF0AF025320252008D2FCB /* TicketPrice.swift */,
+			);
+			path = "Concert View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +207,7 @@
 			files = (
 				CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */,
 				CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */,
+				CAFF0AE92531FAD9008D2FCB /* LeadingModifier.swift in Sources */,
 				CAFF0AC62531A38F008D2FCB /* TicketView.swift in Sources */,
 				CAFF0AC12531A2E5008D2FCB /* HomeView.swift in Sources */,
 				CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */,
@@ -198,8 +216,10 @@
 				CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */,
 				CAFF0AB025319D7A008D2FCB /* ContentView.swift in Sources */,
 				CAFF0ACC2531A3A8008D2FCB /* ProfileView.swift in Sources */,
+				CAFF0AF125320252008D2FCB /* TicketPrice.swift in Sources */,
 				CAFF0AD22531C4E9008D2FCB /* BannerView_Home.swift in Sources */,
 				CAFF0AC92531A39A008D2FCB /* NotificationView.swift in Sources */,
+				CAFF0AEE25320028008D2FCB /* EventDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
