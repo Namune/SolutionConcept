@@ -22,6 +22,8 @@ struct HomeView: View {
                         .onTapGesture(perform: {
                             isEditing = true
                         })
+                        .padding(5)
+                        
                     Spacer()
                     if isEditing{
                         HStack{
@@ -41,6 +43,10 @@ struct HomeView: View {
                         }
                     }
                 }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(Color.black, lineWidth: 1)
+                )
                     .padding()
                 // lagi ga ada search
                 if !isEditing{
@@ -54,17 +60,25 @@ struct HomeView: View {
                         }
                         BannerView_Home().environmentObject(EventViewModel())
                         ScrollView(.vertical){
-                            Text("Recommendation")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .frame(width: UIScreen.main.bounds.width * 0.9, alignment: .leading)
+                            HStack {
+                                Text("Recommendation")
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .frame(width: UIScreen.main.bounds.width * 0.73, alignment: .leading)
+                                Text("Show all")
+                                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            }
                             ScrollRecommendationView_Home().environmentObject(EventViewModel())
                                 .padding(.horizontal)
-                            Text("Watch List")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .frame(width: UIScreen.main.bounds.width * 0.9, alignment: .leading)
-                                .padding(.top, 5)
+                            HStack {
+                                Text("Watch List")
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .frame(width: UIScreen.main.bounds.width * 0.73, alignment: .leading)
+                                    .padding(.top, 5)
+                                Text("Show all")
+                                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            }
                             ScrollRecommendationView_Home().environmentObject(EventViewModel())
                                 .padding(.horizontal)
                         }
