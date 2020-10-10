@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     @State var searchItem : String = ""
+    
     var body: some View {
         VStack{
             HStack{
@@ -16,7 +18,8 @@ struct HomeView: View {
                     .padding()
                 TextField("Search by Concert or Artist", text: $searchItem)
             }
-            
+            BannerView_Home()
+                .padding()
             Spacer()
             // lagi ga ada search
             if searchItem == ""{
@@ -35,6 +38,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environmentObject(EventViewModel())
     }
 }
