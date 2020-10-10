@@ -26,6 +26,8 @@
 		CAFF0AEE25320028008D2FCB /* EventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AED25320028008D2FCB /* EventDetails.swift */; };
 		CAFF0AF125320252008D2FCB /* TicketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AF025320252008D2FCB /* TicketPrice.swift */; };
 		CAFF0AF525320DD3008D2FCB /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AF425320DD3008D2FCB /* ButtonModifier.swift */; };
+		CAFF0AFD25321A2F008D2FCB /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AFC25321A2F008D2FCB /* PersonalInfoView.swift */; };
+		CAFF0B04253224D6008D2FCB /* NotifTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0B03253224D6008D2FCB /* NotifTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		CAFF0AED25320028008D2FCB /* EventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetails.swift; sourceTree = "<group>"; };
 		CAFF0AF025320252008D2FCB /* TicketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPrice.swift; sourceTree = "<group>"; };
 		CAFF0AF425320DD3008D2FCB /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		CAFF0AFC25321A2F008D2FCB /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
+		CAFF0B03253224D6008D2FCB /* NotifTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,15 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				CAFF0AAF25319D7A008D2FCB /* ContentView.swift */,
-				CAFF0AC02531A2E5008D2FCB /* HomeView.swift */,
-				CAFF0AD12531C4E9008D2FCB /* BannerView_Home.swift */,
-				CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */,
+				CAFF0B00253220D8008D2FCB /* Home View */,
 				CAFF0AEB2531FE54008D2FCB /* Concert View */,
 				CAFF0AF325320DBC008D2FCB /* Custom Modifier */,
 				CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */,
 				CAFF0AC52531A38F008D2FCB /* TicketView.swift */,
-				CAFF0AC82531A39A008D2FCB /* NotificationView.swift */,
-				CAFF0ACB2531A3A8008D2FCB /* ProfileView.swift */,
+				CAFF0B02253224BD008D2FCB /* Notification View */,
+				CAFF0AFB25321A12008D2FCB /* Profile View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +146,34 @@
 				CAFF0AF425320DD3008D2FCB /* ButtonModifier.swift */,
 			);
 			path = "Custom Modifier";
+			sourceTree = "<group>";
+		};
+		CAFF0AFB25321A12008D2FCB /* Profile View */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF0ACB2531A3A8008D2FCB /* ProfileView.swift */,
+				CAFF0AFC25321A2F008D2FCB /* PersonalInfoView.swift */,
+			);
+			path = "Profile View";
+			sourceTree = "<group>";
+		};
+		CAFF0B00253220D8008D2FCB /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF0AC02531A2E5008D2FCB /* HomeView.swift */,
+				CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */,
+				CAFF0AD12531C4E9008D2FCB /* BannerView_Home.swift */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		CAFF0B02253224BD008D2FCB /* Notification View */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF0AC82531A39A008D2FCB /* NotificationView.swift */,
+				CAFF0B03253224D6008D2FCB /* NotifTable.swift */,
+			);
+			path = "Notification View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,12 +248,14 @@
 			files = (
 				CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */,
 				CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */,
+				CAFF0AFD25321A2F008D2FCB /* PersonalInfoView.swift in Sources */,
 				CAFF0AE92531FAD9008D2FCB /* LeadingModifier.swift in Sources */,
 				CAFF0AC62531A38F008D2FCB /* TicketView.swift in Sources */,
 				CAFF0AC12531A2E5008D2FCB /* HomeView.swift in Sources */,
 				CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */,
 				CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */,
 				CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */,
+				CAFF0B04253224D6008D2FCB /* NotifTable.swift in Sources */,
 				CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */,
 				CAFF0AB025319D7A008D2FCB /* ContentView.swift in Sources */,
 				CAFF0AF525320DD3008D2FCB /* ButtonModifier.swift in Sources */,
