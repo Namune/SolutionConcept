@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NotificationView.swift
 //  SolutionConcept
 //
 //  Created by Kenji Surya Utama on 10/10/20.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NotificationView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Ini Notif")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct NotificationView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NotificationView()
     }
 }

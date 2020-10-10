@@ -13,6 +13,11 @@
 		CAFF0AB225319D7A008D2FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFF0AB125319D7A008D2FCB /* Assets.xcassets */; };
 		CAFF0AB525319D7A008D2FCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFF0AB425319D7A008D2FCB /* Preview Assets.xcassets */; };
 		CAFF0AB825319D7A008D2FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFF0AB625319D7A008D2FCB /* LaunchScreen.storyboard */; };
+		CAFF0AC12531A2E5008D2FCB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AC02531A2E5008D2FCB /* HomeView.swift */; };
+		CAFF0AC62531A38F008D2FCB /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AC52531A38F008D2FCB /* TicketView.swift */; };
+		CAFF0AC92531A39A008D2FCB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AC82531A39A008D2FCB /* NotificationView.swift */; };
+		CAFF0ACC2531A3A8008D2FCB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0ACB2531A3A8008D2FCB /* ProfileView.swift */; };
+		CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CAFF0AB425319D7A008D2FCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CAFF0AB725319D7A008D2FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAFF0AB925319D7A008D2FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFF0AC02531A2E5008D2FCB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CAFF0AC52531A38F008D2FCB /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		CAFF0AC82531A39A008D2FCB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		CAFF0ACB2531A3A8008D2FCB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,9 @@
 		CAFF0AAA25319D7A008D2FCB /* SolutionConcept */ = {
 			isa = PBXGroup;
 			children = (
+				CAFF0AC32531A314008D2FCB /* View */,
 				CAFF0AAB25319D7A008D2FCB /* AppDelegate.swift */,
 				CAFF0AAD25319D7A008D2FCB /* SceneDelegate.swift */,
-				CAFF0AAF25319D7A008D2FCB /* ContentView.swift */,
 				CAFF0AB125319D7A008D2FCB /* Assets.xcassets */,
 				CAFF0AB625319D7A008D2FCB /* LaunchScreen.storyboard */,
 				CAFF0AB925319D7A008D2FCB /* Info.plist */,
@@ -73,6 +83,19 @@
 				CAFF0AB425319D7A008D2FCB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAFF0AC32531A314008D2FCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF0AAF25319D7A008D2FCB /* ContentView.swift */,
+				CAFF0AC02531A2E5008D2FCB /* HomeView.swift */,
+				CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */,
+				CAFF0AC52531A38F008D2FCB /* TicketView.swift */,
+				CAFF0AC82531A39A008D2FCB /* NotificationView.swift */,
+				CAFF0ACB2531A3A8008D2FCB /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */,
+				CAFF0AC62531A38F008D2FCB /* TicketView.swift in Sources */,
+				CAFF0AC12531A2E5008D2FCB /* HomeView.swift in Sources */,
 				CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */,
+				CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */,
 				CAFF0AB025319D7A008D2FCB /* ContentView.swift in Sources */,
+				CAFF0ACC2531A3A8008D2FCB /* ProfileView.swift in Sources */,
+				CAFF0AC92531A39A008D2FCB /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
