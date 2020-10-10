@@ -9,7 +9,14 @@ import SwiftUI
 
 struct TicketView: View {
     var body: some View {
-        Text("Ini Tiket")
+        VStack {
+            NavigationLink(
+                destination: ConcertView(),
+                label: {
+                    Text("Navigate")
+                })
+            Text("Ini Tiket")
+        }
     }
 }
 
