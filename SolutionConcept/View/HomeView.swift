@@ -39,8 +39,6 @@ struct HomeView: View {
                                 Text("Cancel")
                             })
                         }
-                        
-
                     }
                 }
                     .padding()
