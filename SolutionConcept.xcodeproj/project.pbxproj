@@ -20,6 +20,8 @@
 		CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */; };
 		CAFF0AD22531C4E9008D2FCB /* BannerView_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AD12531C4E9008D2FCB /* BannerView_Home.swift */; };
 		CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AD52531C77E008D2FCB /* Event.swift */; };
+		CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0ADD2531DFD1008D2FCB /* ConcertView.swift */; };
+		CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		CAFF0AD12531C4E9008D2FCB /* BannerView_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView_Home.swift; sourceTree = "<group>"; };
 		CAFF0AD52531C77E008D2FCB /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CAFF0ADD2531DFD1008D2FCB /* ConcertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertView.swift; sourceTree = "<group>"; };
+		CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRecommendationView_Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				CAFF0AAF25319D7A008D2FCB /* ContentView.swift */,
 				CAFF0AC02531A2E5008D2FCB /* HomeView.swift */,
 				CAFF0AD12531C4E9008D2FCB /* BannerView_Home.swift */,
+				CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */,
+				CAFF0ADD2531DFD1008D2FCB /* ConcertView.swift */,
 				CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */,
 				CAFF0AC52531A38F008D2FCB /* TicketView.swift */,
 				CAFF0AC82531A39A008D2FCB /* NotificationView.swift */,
@@ -183,11 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */,
+				CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */,
 				CAFF0AC62531A38F008D2FCB /* TicketView.swift in Sources */,
 				CAFF0AC12531A2E5008D2FCB /* HomeView.swift in Sources */,
 				CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */,
 				CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */,
 				CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */,
+				CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */,
 				CAFF0AB025319D7A008D2FCB /* ContentView.swift in Sources */,
 				CAFF0ACC2531A3A8008D2FCB /* ProfileView.swift in Sources */,
 				CAFF0AD22531C4E9008D2FCB /* BannerView_Home.swift in Sources */,
