@@ -53,12 +53,22 @@ struct HomeView: View {
                             
                         }
                         BannerView_Home().environmentObject(EventViewModel())
-                        Text("Recommendation")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .frame(width: UIScreen.main.bounds.width * 0.9, alignment: .leading)
-                        ScrollRecommendationView_Home().environmentObject(EventViewModel())
-                            .padding(.horizontal)
+                        ScrollView(.vertical){
+                            Text("Recommendation")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .frame(width: UIScreen.main.bounds.width * 0.9, alignment: .leading)
+                            ScrollRecommendationView_Home().environmentObject(EventViewModel())
+                                .padding(.horizontal)
+                            Text("Watch List")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .frame(width: UIScreen.main.bounds.width * 0.9, alignment: .leading)
+                                .padding(.top, 5)
+                            ScrollRecommendationView_Home().environmentObject(EventViewModel())
+                                .padding(.horizontal)
+                        }
+                        
 
                     }
                     

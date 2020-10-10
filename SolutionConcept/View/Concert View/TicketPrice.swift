@@ -40,6 +40,16 @@ struct TicketPrice: View {
             .frame(height: UIScreen.main.bounds.height * 0.2)
             .background(Color(UIColor.green))
             .padding()
+            Button(action: {
+                    print("buy")}
+                   , label: {
+                Text("Buy")
+                    .modifier(ButtonModifier())
+                    .background(Color.init(UIColor.green))
+                    
+                    
+            })
+            
         }
         
         
