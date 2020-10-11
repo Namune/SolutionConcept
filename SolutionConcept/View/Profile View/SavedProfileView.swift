@@ -27,6 +27,7 @@ struct SavedProfileView: View {
                         Text(contactVM.listContact[idx].number)
                             .padding(.bottom, 2)
                         }
+                    .padding()
                     }
                     
 
