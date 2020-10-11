@@ -10,47 +10,83 @@ import SwiftUI
 struct TicketPrice: View {
     var body: some View {
         VStack {
-            HStack{
-                Text("Ticket Tier")
-                    .rotationEffect(.degrees(-90))
-                Text("- - - - - - - - -")
-                    .rotationEffect(.degrees(-90))
-                    .padding(.horizontal, -60)
-                VStack {
-                    Text("Privilege")
-                    Text("Mobil")
+            ZStack {
+                Image("ticket")
+                    .padding()
+                HStack{
+                    VStack(alignment: .leading){
+                        Text("Diamond")
+                            .fontWeight(.bold)
+                        Text("1 x Coachella Printable Ticket")
+                            .font(.caption)
+                        Text("1 x Exclusive Merchandise (Photo + Sign)")
+                            .font(.caption)
+                        Text("Free join voice chat with performers and get ‘New Release Album’ (include sign)")
+                            .font(.caption)
+                            .multilineTextAlignment(.leading)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.6, alignment: .trailing)
+                    
                 }
             }
-            .modifier(LeadingModifier())
-            .frame(height: UIScreen.main.bounds.height * 0.2)
-            .background(Color(UIColor.green))
-            .padding()
-            HStack{
-                Text("Ticket Tier")
-                    .rotationEffect(.degrees(-90))
-                Text("- - - - - - - - -")
-                    .rotationEffect(.degrees(-90))
-                    .padding(.horizontal, -60)
-                VStack {
-                    Text("Privilege")
-                    Text("Mobil")
+            ZStack {
+                Image("ticket_white")
+                    .padding()
+                HStack{
+                    VStack(alignment: .leading){
+                        Text("Gold")
+                            .fontWeight(.bold)
+                        Text("1 x Coachella Printable Ticket")
+                            .font(.caption)
+                        Text("1 x Exclusive Merchandise (Photo + Sign)")
+                            .font(.caption)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.6, alignment: .trailing)
                 }
             }
-            .modifier(LeadingModifier())
-            .frame(height: UIScreen.main.bounds.height * 0.2)
-            .background(Color(UIColor.green))
+            ZStack {
+                Image("ticket_white")
+                    .padding()
+                HStack{
+                    VStack(alignment: .leading){
+                        Text("Silver")
+                            .fontWeight(.bold)
+                        Text("1 x Coachella Printable Ticket")
+                            .font(.caption)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.5, alignment: .leading)
+                }
+            }
+            Text("Watch with Friends!")
+                .fontWeight(.bold)
+                .modifier(LeadingModifier())
+            HStack{
+                Image("friend")
+                    .padding()
+                VStack(alignment :.leading){
+                    Text("Invite your friends and get cheaper bundle!")
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                    Text("2 x Coachella Printable Ticket")
+                        .font(.caption)
+                    Text("2 x Exclusive Merchandise (Photo + Sign)")
+                        .font(.caption)
+                }
+                .frame(width: UIScreen.main.bounds.width * 0.65, height: UIScreen.main.bounds.height * 0.15, alignment: .leading)
+            }
+            .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.15, alignment: .leading)
+            .background(Color("soft"))
             .padding()
             Button(action: {
-                    print("buy")}
-                   , label: {
-                Text("Buy")
+                print("buy")
+            }, label: {
+                Text("Choose Ticket")
                     .modifier(ButtonModifier())
-                    .background(Color.init(UIColor.green))
-                    
+                    .foregroundColor(.black)
                     
             })
-            
         }
+            
         
         
     }

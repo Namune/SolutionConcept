@@ -11,13 +11,14 @@ struct ConcertView: View {
     
     @State private var fav : Bool = false
     @State private var segmen = 0
-    var menu = ["Event Details", "Ticket Price"]
+    var menu = ["Event Details", "Ticket Categories"]
     
     var body: some View {
         
         VStack {
             ZStack {
-                Color.init(UIColor.green)
+                Image("detail")
+                    .resizable()
                     .frame(width: UIScreen.main.bounds.width * 1, height: UIScreen.main.bounds.height * 0.3, alignment: .center)
                     .edgesIgnoringSafeArea(.all)
                     .padding(.bottom, -130)
