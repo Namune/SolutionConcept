@@ -58,9 +58,9 @@ struct AddTrackView: View {
                     Button(action: {
                         print("order")
                     }, label: {
-                        Text("Tract")
+                        Text("Track")
                             .padding(.horizontal)
-                            .padding(2)
+                            .padding(8)
                             .background(RoundedRectangle(cornerRadius: 10).fill(Color("softButton")))
                             .padding()
                             .foregroundColor(.black)
@@ -103,9 +103,9 @@ struct RecArtist : View{
                         .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.1, alignment: .center)
                     Text(name[idx])
                     Spacer()
-                    Text("Tract")
+                    Text("Track")
                         .padding(.horizontal)
-                        .padding(2)
+                        .padding(8)
                         .background(RoundedRectangle(cornerRadius: 10).fill(Color("softButton")))
                         .padding()
                         
