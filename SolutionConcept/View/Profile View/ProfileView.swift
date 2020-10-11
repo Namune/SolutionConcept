@@ -68,7 +68,7 @@ struct ProfileView: View {
                     
                     HStack {
                         NavigationLink(
-                            destination: PersonalInfoView(),
+                            destination: FavGenreView(),
                             label: {
                                 Text("Favorite Genres")
                                     .foregroundColor(.black)

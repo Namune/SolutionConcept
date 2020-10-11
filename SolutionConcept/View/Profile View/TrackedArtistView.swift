@@ -34,7 +34,7 @@ struct TrackedArtistView: View {
                         Spacer()
                         Text("Untract")
                             .padding(4)
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(UIColor.green)))
+                            .background(RoundedRectangle(cornerRadius: 10).fill(Color("softButton")))
                     }
                 }
                 .padding()
