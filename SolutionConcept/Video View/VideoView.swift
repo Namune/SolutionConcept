@@ -22,9 +22,9 @@ struct VideoView: View {
                         avPlayer.play()
                     }
                     .frame(height: UIScreen.main.bounds.height * 0.33)
-                    .onTapGesture(count: 1, perform: {
-                        emoticon.toggle()
-                    })
+//                    .onTapGesture(count: 1, perform: {
+//                        emoticon.toggle()
+//                    })
                 if emoticon == true{
                     Image("heartemo")
                         .resizable()

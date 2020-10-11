@@ -12,6 +12,7 @@ struct ConcertView: View {
     @State private var fav : Bool = false
     @State private var segmen = 0
     var menu = ["Event Details", "Ticket Categories"]
+    @State var eventSegmen = true
     
     var body: some View {
         
@@ -50,17 +51,63 @@ struct ConcertView: View {
                 }
                 .modifier(LeadingModifier())
             }
-            
-            Picker("", selection: $segmen) {
-                            ForEach(0..<menu.count) { index in
-                                Text(self.menu[index]).tag(index)
+            HStack {
+                VStack {
+                    Button(action: {
+                        eventSegmen = true
+                    }, label: {
+                        VStack {
+                            Text("Concert Details")
+                                .frame(width: UIScreen.main.bounds.width * 0.4)
+                                .foregroundColor(.black)
+                            if eventSegmen{
+                                goldUnder()
+                            }else{
+                                whiteUnder()
                             }
                         }
-            .pickerStyle(SegmentedPickerStyle())
-            .modifier(LeadingModifier())
+                        
+                    })
+
+                    
+
+                    
+                        
+                    
+                }
+                VStack {
+                    Button(action: {
+                        eventSegmen = false
+                    }, label: {
+                        VStack {
+                            Text("Ticket Categories")
+                                .frame(width: UIScreen.main.bounds.width * 0.4)
+                                .foregroundColor(.black)
+                            if !eventSegmen{
+                                goldUnder()
+                            }else{
+                                whiteUnder()
+                            }
+                        }
+                        
+                    })
+                    
+                    
+                }
+                
+            }
+            .frame(width: UIScreen.main.bounds.width)
             .padding()
+//            Picker("", selection: $segmen) {
+//                            ForEach(0..<menu.count) { index in
+//                                Text(self.menu[index]).tag(index)
+//                            }
+//                        }
+//            .pickerStyle(SegmentedPickerStyle())
+//            .modifier(LeadingModifier())
+//            .padding()
             ScrollView(.vertical, showsIndicators: false){
-                if segmen == 0{
+                if eventSegmen {
                     EventDetails()
                 }else{
                     TicketPrice()
@@ -71,7 +118,16 @@ struct ConcertView: View {
         
         }
 }
-
+func goldUnder() -> some View{
+    Color("GoldYellow")
+        .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.002)
+        .padding(.top, -5)
+}
+func whiteUnder() -> some View{
+    Color(UIColor.white)
+        .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.002)
+        .padding(.top, -5)
+}
 extension ConcertView{
     func changeFav(){
         fav.toggle()
