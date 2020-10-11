@@ -58,7 +58,7 @@ struct HomeView: View {
                                 .frame(width: UIScreen.main.bounds.width * 0.9, alignment: .leading)
                             
                         }
-                        BannerView_Home().environmentObject(EventViewModel())
+                        BannerView_Home().environmentObject(EventViewModel()).environmentObject(NavigationFlowObject())
                         ScrollView(.vertical){
                             HStack {
                                 Text("Recommendation")

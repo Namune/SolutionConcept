@@ -15,43 +15,59 @@ struct NotificationView: View {
                 .fontWeight(.bold)
                 .padding()
                 .modifier(LeadingModifier())
-            
-            ScrollView(.horizontal) {
-                HStack{
-                    Button(action: {
-                        print("order")
-                    }, label: {
-                        ZStack {
-                            Text("Purchase Order")
-                                .frame(width: UIScreen.main.bounds.width * 0.31)
-                                .background(RoundedRectangle(cornerRadius: 40).fill(Color(UIColor.green)))
-                        }
-                    })
-                    
-                    Button(action: {
-                        print("order")
-                    }, label: {
-                        Text("Verification")
-                            .frame(width: UIScreen.main.bounds.width * 0.25)
-                            .background(RoundedRectangle(cornerRadius: 40).fill(Color(UIColor.green)))
-                    })
-                    
-                    Button(action: {
-                        print("order")
-                    }, label: {
-                        Text("Reminder")
-                            .frame(width: UIScreen.main.bounds.width * 0.21)
-                            .background(RoundedRectangle(cornerRadius: 40).fill(Color(UIColor.green)))
-                    })
-                }
-                .modifier(LeadingModifier())
-                .navigationTitle("")
-                .navigationBarHidden(true)
+            ScrollView(.vertical) {
+                Image("notif")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                    .navigationTitle("")
+                    .navigationBarHidden(true)
             }
-            .padding()
-            NotifTable()
             Spacer()
         }
+//        VStack {
+//            Text("Notification")
+//                .font(.title)
+//                .fontWeight(.bold)
+//                .padding()
+//                .modifier(LeadingModifier())
+//
+//            ScrollView(.horizontal) {
+//                HStack{
+//                    Button(action: {
+//                        print("order")
+//                    }, label: {
+//                        ZStack {
+//                            Text("Purchase Order")
+//                                .frame(width: UIScreen.main.bounds.width * 0.31)
+//                                .background(RoundedRectangle(cornerRadius: 40).fill(Color(UIColor.green)))
+//                        }
+//                    })
+//
+//                    Button(action: {
+//                        print("order")
+//                    }, label: {
+//                        Text("Verification")
+//                            .frame(width: UIScreen.main.bounds.width * 0.25)
+//                            .background(RoundedRectangle(cornerRadius: 40).fill(Color(UIColor.green)))
+//                    })
+//
+//                    Button(action: {
+//                        print("order")
+//                    }, label: {
+//                        Text("Reminder")
+//                            .frame(width: UIScreen.main.bounds.width * 0.21)
+//                            .background(RoundedRectangle(cornerRadius: 40).fill(Color(UIColor.green)))
+//                    })
+//                }
+//                .modifier(LeadingModifier())
+//                .navigationTitle("")
+//                .navigationBarHidden(true)
+//            }
+//            .padding()
+//            NotifTable()
+//            Spacer()
+//        }
     }
     
     func background() -> some View{

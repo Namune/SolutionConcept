@@ -10,6 +10,8 @@
 		CA0EF10B2533277800A1307C /* NavigationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF10A2533277800A1307C /* NavigationData.swift */; };
 		CA0EF1112533316C00A1307C /* TicketConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1102533316C00A1307C /* TicketConfirmationView.swift */; };
 		CA0EF1152533318900A1307C /* CheckoutPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1142533318900A1307C /* CheckoutPurchaseView.swift */; };
+		CA0EF11B25334A6900A1307C /* TicketPurchasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF11A25334A6900A1307C /* TicketPurchasedView.swift */; };
+		CA0EF11F25334C6800A1307C /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF11E25334C6800A1307C /* VideoView.swift */; };
 		CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */; };
 		CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */; };
 		CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD62532ECE000ABB561 /* WatchList.swift */; };
@@ -44,6 +46,8 @@
 		CA0EF10A2533277800A1307C /* NavigationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationData.swift; sourceTree = "<group>"; };
 		CA0EF1102533316C00A1307C /* TicketConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketConfirmationView.swift; sourceTree = "<group>"; };
 		CA0EF1142533318900A1307C /* CheckoutPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutPurchaseView.swift; sourceTree = "<group>"; };
+		CA0EF11A25334A6900A1307C /* TicketPurchasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPurchasedView.swift; sourceTree = "<group>"; };
+		CA0EF11E25334C6800A1307C /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistView.swift; sourceTree = "<group>"; };
 		CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrackView.swift; sourceTree = "<group>"; };
 		CA73ECD62532ECE000ABB561 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
@@ -92,8 +96,17 @@
 			children = (
 				CA0EF1102533316C00A1307C /* TicketConfirmationView.swift */,
 				CA0EF1142533318900A1307C /* CheckoutPurchaseView.swift */,
+				CA0EF11A25334A6900A1307C /* TicketPurchasedView.swift */,
 			);
 			path = Payment;
+			sourceTree = "<group>";
+		};
+		CA0EF11D25334C4D00A1307C /* Video View */ = {
+			isa = PBXGroup;
+			children = (
+				CA0EF11E25334C6800A1307C /* VideoView.swift */,
+			);
+			path = "Video View";
 			sourceTree = "<group>";
 		};
 		CA73ECD92532F82400ABB561 /* Ticket View */ = {
@@ -127,6 +140,7 @@
 			children = (
 				CAFF0AD42531C76A008D2FCB /* Model */,
 				CAFF0AC32531A314008D2FCB /* View */,
+				CA0EF11D25334C4D00A1307C /* Video View */,
 				CAFF0AAB25319D7A008D2FCB /* AppDelegate.swift */,
 				CAFF0AAD25319D7A008D2FCB /* SceneDelegate.swift */,
 				CAFF0AB125319D7A008D2FCB /* Assets.xcassets */,
@@ -293,10 +307,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */,
+				CA0EF11B25334A6900A1307C /* TicketPurchasedView.swift in Sources */,
 				CA0EF1152533318900A1307C /* CheckoutPurchaseView.swift in Sources */,
 				CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */,
 				CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */,
 				CA8A77942532B1300066EF7F /* SavedProfileView.swift in Sources */,
+				CA0EF11F25334C6800A1307C /* VideoView.swift in Sources */,
 				CAFF0AFD25321A2F008D2FCB /* PersonalInfoView.swift in Sources */,
 				CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */,
 				CAFF0AE92531FAD9008D2FCB /* LeadingModifier.swift in Sources */,

@@ -7,9 +7,16 @@
 
 import SwiftUI
 
+final class NavigationFlowObject: ObservableObject {
+    @Published var isActive: Bool = false
+    @Published var finalIsActive : Bool = false
+}
+
 struct BannerView_Home: View {
     
     @EnvironmentObject var eventVM : EventViewModel
+    @EnvironmentObject var navFlow : NavigationFlowObject
+    
     private var imageArray : [String] =
         ["coach","ellish","super8"]
     @State var goActive : Bool = false
@@ -19,15 +26,10 @@ struct BannerView_Home: View {
             ForEach(eventVM.listEvent.indices, id: \.self) {idx in
                 VStack{
                     NavigationLink(
-                        destination: ConcertView(), isActive: $goActive)
+                        destination: ConcertView(), isActive: $navFlow.isActive)
                             {
                             EmptyView()
-                            }
-//                    NavigationLink(destination: FinalResult(), isActive: $navigationFlow.finalIsActive) {
-//                        EmptyView()
-//                    }.isDetailLink(false)
-//                    Text(eventVM.listEvent[idx].name)
-//                    Text(eventVM.listEvent[idx].desc)
+                            }.isDetailLink(false)
                     Image(imageArray[idx])
                         .resizable()
                         .cornerRadius(20)
@@ -36,7 +38,7 @@ struct BannerView_Home: View {
                                     .stroke(Color.yellow, lineWidth: 2)
                             )
                         .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
-                            goActive = true
+                            navFlow.isActive = true
                         })
                     
                     }
@@ -53,6 +55,6 @@ struct BannerView_Home: View {
 
 struct BannerView_Home_Previews: PreviewProvider {
     static var previews: some View {
-        BannerView_Home().environmentObject(EventViewModel())
+        BannerView_Home().environmentObject(EventViewModel()).environmentObject(NavigationFlowObject())
     }
 }

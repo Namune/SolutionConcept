@@ -11,7 +11,7 @@ struct TicketPrice: View {
     var body: some View {
         VStack {
             ZStack {
-                Image("ticket")
+                Image("ticket_white")
                     .padding()
                 HStack{
                     VStack(alignment: .leading){
@@ -67,7 +67,7 @@ struct TicketPrice: View {
                     Text("Invite your friends and get cheaper bundle!")
                         .fontWeight(.bold)
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                    Text("2 x Coachella Printable Ticket")
+                    Text("2 x Coachella Gold Ticket")
                         .font(.caption)
                     Text("2 x Exclusive Merchandise (Photo + Sign)")
                         .font(.caption)
@@ -75,16 +75,32 @@ struct TicketPrice: View {
                 .frame(width: UIScreen.main.bounds.width * 0.65, height: UIScreen.main.bounds.height * 0.15, alignment: .leading)
             }
             .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.15, alignment: .leading)
+            .padding()
+            HStack{
+                Image("3tix")
+                    .padding()
+                VStack(alignment :.leading){
+                    Text("Invite your friends and get cheaper bundle!")
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                    Text("3 x Coachella Gold Ticket")
+                        .font(.caption)
+                    Text("3 x Exclusive Merchandise (Photo + Sign)")
+                        .font(.caption)
+                }
+                .frame(width: UIScreen.main.bounds.width * 0.65, height: UIScreen.main.bounds.height * 0.15, alignment: .leading)
+            }
+            .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.15, alignment: .leading)
             .background(Color("soft"))
             .padding()
-            Button(action: {
-                print("buy")
-            }, label: {
-                Text("Choose Ticket")
-                    .modifier(ButtonModifier())
-                    .foregroundColor(.black)
-                    
-            })
+            
+            NavigationLink(
+                destination: TicketConfirmationView(),
+                label: {
+                    Text("Choose Ticket")
+                        .modifier(ButtonModifier())
+                        .foregroundColor(.black)
+                })
         }
             
         

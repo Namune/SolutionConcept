@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UpcomingTicketView: View {
     
-    private var ImageArray : [String] = ["raisa", "ellishP", "lauv", "head"]
+    private var ImageArray : [String] = ["ellishP", "raisa", "lauv", "head"]
     @EnvironmentObject var eventVM : EventViewModel
     
     var body: some View {
