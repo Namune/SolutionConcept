@@ -87,7 +87,7 @@ struct TicketConfirmationView: View {
                 })
      
             }
-            ScrollView(.vertical){
+            ScrollView(.vertical, showsIndicators: false){
                 Image("merc")
                     .padding()
                 

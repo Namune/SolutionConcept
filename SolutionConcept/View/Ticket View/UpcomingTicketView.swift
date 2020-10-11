@@ -14,7 +14,7 @@ struct UpcomingTicketView: View {
     @State var goView = false
     
     var body: some View {
-        ScrollView(.vertical) {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading) {
                 NavigationLink(
                     destination: EllishView(), isActive: $goView,

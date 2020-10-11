@@ -16,7 +16,7 @@ struct TrackedArtistView: View {
     @State var add : Bool = false
     
     var body: some View {
-        ScrollView(.vertical) {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading) {
                 NavigationLink(
                     destination: AddTrackView().environmentObject(NavigationData()),

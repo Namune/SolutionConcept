@@ -13,7 +13,7 @@ struct TicketPurchasedView: View {
     
     var body: some View {
         VStack {
-            ScrollView(.vertical) {
+            ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     Image("depan")
                         .resizable()

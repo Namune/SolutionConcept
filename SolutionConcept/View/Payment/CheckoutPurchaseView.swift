@@ -10,7 +10,7 @@ import SwiftUI
 struct CheckoutPurchaseView: View {
     var body: some View {
         VStack {
-            ScrollView(.vertical) {
+            ScrollView(.vertical, showsIndicators: false) {
                 Image("pay")
                     .resizable()
                     .aspectRatio(contentMode: .fit)

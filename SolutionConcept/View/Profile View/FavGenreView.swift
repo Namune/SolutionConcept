@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavGenreView: View {
     var body: some View {
-        ScrollView(.vertical) {
+        ScrollView(.vertical, showsIndicators: false) {
             Image("fav")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
