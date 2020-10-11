@@ -14,7 +14,7 @@ struct PromotorHomeView: View {
                 NavigationLink(
                     destination: PromotorStatView(),
                     label: {
-                        Image("proHome")
+                        Image("past")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
