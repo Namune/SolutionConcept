@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
 
 class NavigationData: ObservableObject {
     @Published var navToggle = false
+    func reloadDashboard(){
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.reloadDashboard()
+    }
 }

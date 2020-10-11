@@ -12,7 +12,6 @@ struct TicketConfirmationView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Concert Detail")
-                .font(.caption)
             HStack{
                 Image("coachT")
                     .resizable()
@@ -34,7 +33,6 @@ struct TicketConfirmationView: View {
                 }
             }
             Text("Choosen Ticket")
-                .font(.caption)
             VStack {
                 HStack{
                     Image("3tix")

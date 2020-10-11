@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+final class NavigationFlowObject: ObservableObject {
+    @Published var isActive: Bool = false
+}
+
 struct ContentView: View {
     var body: some View {
         NavigationView {
