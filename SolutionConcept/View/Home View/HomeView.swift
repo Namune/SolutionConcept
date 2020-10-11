@@ -78,6 +78,7 @@ struct HomeView: View {
                                     .padding(.top, 5)
                                 Text("Show all")
                                     .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                                    .padding(.top, 5)
                             }
                             ScrollRecommendationView_Home().environmentObject(EventViewModel())
                                 .padding(.horizontal)

@@ -11,9 +11,7 @@ struct NotifTable: View {
     var body: some View {
         List{
             ZStack {
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(Color(red: 199.0/255, green: 228.0/255, blue: 228.0/255, opacity: 1.0))
-                    .frame(width: UIScreen.main.bounds.width * 0.9, height : UIScreen.main.bounds.height * 0.16, alignment: .leading)
+                background()
                 HStack {
                     Text("Ini Image")
                         .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.14, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -44,9 +42,7 @@ struct NotifTable: View {
                 
             }
             ZStack {
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(Color(UIColor.white))
-                    .frame(width: UIScreen.main.bounds.width * 0.9, height : UIScreen.main.bounds.height * 0.16, alignment: .leading)
+                backgroundWhite()
                 HStack {
                     Text("Ini Image")
                         .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.14, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -77,6 +73,19 @@ struct NotifTable: View {
                 
             }
         }
+    }
+}
+
+extension NotifTable{
+    func background() -> some View{
+        RoundedRectangle(cornerRadius: 10, style: .continuous)
+            .fill(Color(red: 199.0/255, green: 228.0/255, blue: 228.0/255, opacity: 1.0))
+            .frame(width: UIScreen.main.bounds.width * 0.9, height : UIScreen.main.bounds.height * 0.16, alignment: .leading)
+    }
+    func backgroundWhite() -> some View{
+        RoundedRectangle(cornerRadius: 10, style: .continuous)
+            .fill(Color(UIColor.white))
+            .frame(width: UIScreen.main.bounds.width * 0.9, height : UIScreen.main.bounds.height * 0.16, alignment: .leading)
     }
 }
 

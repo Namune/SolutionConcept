@@ -15,7 +15,7 @@ struct Event: Codable {
         
 }
 
-class EventViewModel: ObservableObject {
+class EventViewModel : ObservableObject {
     
     @Published var listEvent: [Event] = [
         Event(id: UUID(), name: "Ed Sheeran", desc: "Paling Laku"),
@@ -23,12 +23,10 @@ class EventViewModel: ObservableObject {
         Event(id: UUID(), name: "Peterpan", desc: "Udah Ganti Nama")
     ]
     @Published var listEventRec: [Event] = [
-        Event(id: UUID(), name: "Ed Sheeran", desc: "Paling Laku"),
-        Event(id: UUID(), name: "Ari Laso", desc: "Asli Indonesia"),
+        Event(id: UUID(), name: "Java Jazz Festival", desc: "Paling Laku"),
+        Event(id: UUID(), name: "Where Do We Go", desc: "Asli Indonesia"),
         Event(id: UUID(), name: "Peterpan", desc: "Udah Ganti Nama"),
-        Event(id: UUID(), name: "Ed Sheeran", desc: "Paling Laku"),
-        Event(id: UUID(), name: "Ari Laso", desc: "Asli Indonesia"),
-        Event(id: UUID(), name: "Peterpan", desc: "Udah Ganti Nama")
+        Event(id: UUID(), name: "Ed Sheeran", desc: "Paling Laku")
     ]
     @Published var listEventWL: [Event] = [
         Event(id: UUID(), name: "Ed Sheeran", desc: "Paling Laku"),
