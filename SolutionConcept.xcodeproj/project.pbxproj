@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */; };
+		CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */; };
+		CA8A77942532B1300066EF7F /* SavedProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A77932532B1300066EF7F /* SavedProfileView.swift */; };
+		CA8A77972532B2460066EF7F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A77962532B2460066EF7F /* Contact.swift */; };
 		CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AAB25319D7A008D2FCB /* AppDelegate.swift */; };
 		CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AAD25319D7A008D2FCB /* SceneDelegate.swift */; };
 		CAFF0AB025319D7A008D2FCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AAF25319D7A008D2FCB /* ContentView.swift */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistView.swift; sourceTree = "<group>"; };
+		CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrackView.swift; sourceTree = "<group>"; };
+		CA8A77932532B1300066EF7F /* SavedProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProfileView.swift; sourceTree = "<group>"; };
+		CA8A77962532B2460066EF7F /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		CAFF0AA825319D7A008D2FCB /* SolutionConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolutionConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFF0AAB25319D7A008D2FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFF0AAD25319D7A008D2FCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				CAFF0AD52531C77E008D2FCB /* Event.swift */,
+				CA8A77962532B2460066EF7F /* Contact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +162,9 @@
 			children = (
 				CAFF0ACB2531A3A8008D2FCB /* ProfileView.swift */,
 				CAFF0AFC25321A2F008D2FCB /* PersonalInfoView.swift */,
+				CA8A77932532B1300066EF7F /* SavedProfileView.swift */,
+				CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */,
+				CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */,
 			);
 			path = "Profile View";
 			sourceTree = "<group>";
@@ -248,7 +260,9 @@
 			files = (
 				CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */,
 				CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */,
+				CA8A77942532B1300066EF7F /* SavedProfileView.swift in Sources */,
 				CAFF0AFD25321A2F008D2FCB /* PersonalInfoView.swift in Sources */,
+				CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */,
 				CAFF0AE92531FAD9008D2FCB /* LeadingModifier.swift in Sources */,
 				CAFF0AC62531A38F008D2FCB /* TicketView.swift in Sources */,
 				CAFF0AC12531A2E5008D2FCB /* HomeView.swift in Sources */,
@@ -256,7 +270,9 @@
 				CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */,
 				CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */,
 				CAFF0B04253224D6008D2FCB /* NotifTable.swift in Sources */,
+				CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */,
 				CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */,
+				CA8A77972532B2460066EF7F /* Contact.swift in Sources */,
 				CAFF0AB025319D7A008D2FCB /* ContentView.swift in Sources */,
 				CAFF0AF525320DD3008D2FCB /* ButtonModifier.swift in Sources */,
 				CAFF0ACC2531A3A8008D2FCB /* ProfileView.swift in Sources */,

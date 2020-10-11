@@ -23,32 +23,32 @@ struct ProfileView: View {
             }
             List{
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(Color(red: 199.0/255, green: 228.0/255, blue: 228.0/255, opacity: 1.0))
-                        .frame(width: UIScreen.main.bounds.width * 0.9, height : UIScreen.main.bounds.height * 0.05, alignment: .leading)
+                    background()
                     NavigationLink(
                         destination: PersonalInfoView(),
                         label: {
                             Text("Personal Information")
-                                .foregroundColor(.black)
                         })
                         .padding()
-                
-                    
                 }
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(Color(red: 199.0/255, green: 228.0/255, blue: 228.0/255, opacity: 1.0))
-                        .frame(width: UIScreen.main.bounds.width * 0.9, height : UIScreen.main.bounds.height * 0.05, alignment: .leading)
+                    background()
                     NavigationLink(
-                        destination: PersonalInfoView(),
+                        destination: SavedProfileView().environmentObject(ContactViewModel()),
                         label: {
                             Text("Saved Profiles")
-                                .foregroundColor(.black)
                         })
                         .padding()
-                    
-                    
+                }
+                ZStack {
+                    background()
+                    NavigationLink(
+                        destination: TrackedArtistView(),
+                        label: {
+                            Text("Tracked Artist")
+                        })
+                        .padding()
+                        .padding(.vertical, 15)
                 }
             }
             Button(action: {
@@ -64,6 +64,13 @@ struct ProfileView: View {
     }
 }
 
+extension ProfileView{
+    func background() -> some View {
+        RoundedRectangle(cornerRadius: 10, style: .continuous)
+            .fill(Color(red: 199.0/255, green: 228.0/255, blue: 228.0/255, opacity: 1.0))
+            .frame(width: UIScreen.main.bounds.width * 0.9, height : UIScreen.main.bounds.height * 0.05, alignment: .leading)
+    }
+}
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
