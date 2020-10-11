@@ -10,6 +10,8 @@
 		CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */; };
 		CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */; };
 		CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD62532ECE000ABB561 /* WatchList.swift */; };
+		CA73ECDB2532F84600ABB561 /* UpcomingTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECDA2532F84600ABB561 /* UpcomingTicketView.swift */; };
+		CA73ECDF2532F85500ABB561 /* PastTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECDE2532F85500ABB561 /* PastTicketView.swift */; };
 		CA8A77942532B1300066EF7F /* SavedProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A77932532B1300066EF7F /* SavedProfileView.swift */; };
 		CA8A77972532B2460066EF7F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A77962532B2460066EF7F /* Contact.swift */; };
 		CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0AAB25319D7A008D2FCB /* AppDelegate.swift */; };
@@ -39,6 +41,8 @@
 		CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistView.swift; sourceTree = "<group>"; };
 		CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrackView.swift; sourceTree = "<group>"; };
 		CA73ECD62532ECE000ABB561 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
+		CA73ECDA2532F84600ABB561 /* UpcomingTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTicketView.swift; sourceTree = "<group>"; };
+		CA73ECDE2532F85500ABB561 /* PastTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastTicketView.swift; sourceTree = "<group>"; };
 		CA8A77932532B1300066EF7F /* SavedProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProfileView.swift; sourceTree = "<group>"; };
 		CA8A77962532B2460066EF7F /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		CAFF0AA825319D7A008D2FCB /* SolutionConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolutionConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA73ECD92532F82400ABB561 /* Ticket View */ = {
+			isa = PBXGroup;
+			children = (
+				CAFF0AC52531A38F008D2FCB /* TicketView.swift */,
+				CA73ECDA2532F84600ABB561 /* UpcomingTicketView.swift */,
+				CA73ECDE2532F85500ABB561 /* PastTicketView.swift */,
+			);
+			path = "Ticket View";
+			sourceTree = "<group>";
+		};
 		CAFF0A9F25319D7A008D2FCB = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +138,7 @@
 				CAFF0AEB2531FE54008D2FCB /* Concert View */,
 				CAFF0AF325320DBC008D2FCB /* Custom Modifier */,
 				CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */,
-				CAFF0AC52531A38F008D2FCB /* TicketView.swift */,
+				CA73ECD92532F82400ABB561 /* Ticket View */,
 				CAFF0B02253224BD008D2FCB /* Notification View */,
 				CAFF0AFB25321A12008D2FCB /* Profile View */,
 			);
@@ -273,11 +287,13 @@
 				CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */,
 				CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */,
 				CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */,
+				CA73ECDB2532F84600ABB561 /* UpcomingTicketView.swift in Sources */,
 				CAFF0B04253224D6008D2FCB /* NotifTable.swift in Sources */,
 				CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */,
 				CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */,
 				CA8A77972532B2460066EF7F /* Contact.swift in Sources */,
 				CAFF0AB025319D7A008D2FCB /* ContentView.swift in Sources */,
+				CA73ECDF2532F85500ABB561 /* PastTicketView.swift in Sources */,
 				CAFF0AF525320DD3008D2FCB /* ButtonModifier.swift in Sources */,
 				CAFF0ACC2531A3A8008D2FCB /* ProfileView.swift in Sources */,
 				CAFF0AF125320252008D2FCB /* TicketPrice.swift in Sources */,

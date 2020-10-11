@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ProfileView: View {
     var body: some View {
         VStack {
@@ -14,53 +15,128 @@ struct ProfileView: View {
                 Color.init(UIColor.green)
                     .frame(width: UIScreen.main.bounds.width * 1, height: UIScreen.main.bounds.height * 0.3, alignment: .center)
                     .edgesIgnoringSafeArea(.all)
-                    .padding(.bottom, -140)
+                    .padding(.bottom, -20)
                 VStack{
                     Text("Ini Image")
                     Text("Name")
                 }
 
             }
-            List{
-                ZStack {
-                    background()
-                    NavigationLink(
-                        destination: PersonalInfoView(),
-                        label: {
-                            Text("Personal Information")
+            
+            ZStack{
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .fill(Color("soft"))
+                VStack{
+                    HStack {
+                        NavigationLink(
+                            destination: PersonalInfoView(),
+                            label: {
+                                Text("Account Information")
+                                    .foregroundColor(.black)
+                                    .frame(width: LeadingModifier.windowWidth()*0.80, alignment: .leading)
                         })
-                        .padding()
-                }
-                ZStack {
-                    background()
-                    NavigationLink(
-                        destination: SavedProfileView().environmentObject(ContactViewModel()),
-                        label: {
-                            Text("Saved Profiles")
+                        Image(systemName: "chevron.right")
+                    }
+                    
+                    Divider()
+                    
+                    HStack {
+                        NavigationLink(
+                            destination: SavedProfileView(),
+                            label: {
+                                Text("Saved profiles")
+                                    .foregroundColor(.black)
+                                    .frame(width: LeadingModifier.windowWidth()*0.80, alignment: .leading)
                         })
-                        .padding()
+                        Image(systemName: "chevron.right")
+                    }
                 }
-                ZStack {
-                    background()
-                    NavigationLink(
-                        destination: TrackedArtistView(),
-                        label: {
-                            Text("Tracked Artist")
-                        })
-                        .padding()
-                        .padding(.vertical, 15)
-                }
+
             }
-            Button(action: {
-                print("log out")
-            }, label: {
-                Text("Log Out")
-            })
+            .frame(width: UIScreen.main.bounds.width * 0.9, height: 100, alignment: .leading)
+            .padding(.bottom)
+            ZStack{
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .fill(Color("soft"))
+                VStack{
+                    HStack {
+                        NavigationLink(
+                            destination: TrackedArtistView(),
+                            label: {
+                                Text("Tracked Artist")
+                                    .foregroundColor(.black)
+                                    .frame(width: LeadingModifier.windowWidth()*0.80, alignment: .leading)
+                        })
+                        Image(systemName: "chevron.right")
+                    }
+                    
+                    Divider()
+                    
+                    HStack {
+                        NavigationLink(
+                            destination: PersonalInfoView(),
+                            label: {
+                                Text("Favorite Genres")
+                                    .foregroundColor(.black)
+                                    .frame(width: LeadingModifier.windowWidth()*0.80, alignment: .leading)
+                        })
+                        Image(systemName: "chevron.right")
+                    }
+                }
+
+            }
+            .frame(width: UIScreen.main.bounds.width * 0.9, height: 100, alignment: .leading)
+            .padding(.bottom)
             
+            ZStack{
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .fill(Color("soft"))
+                VStack{
+                    HStack {
+                        NavigationLink(
+                            destination: EmptyView(),
+                            label: {
+                                Text("Terms of Use")
+                                    .foregroundColor(.black)
+                                    .frame(width: LeadingModifier.windowWidth()*0.80, alignment: .leading)
+                        })
+                        Image(systemName: "chevron.right")
+                    }
+                    
+                    Divider()
+                    
+                    HStack {
+                        NavigationLink(
+                            destination: EmptyView(),
+                            label: {
+                                Text("Privacy Policy")
+                                    .foregroundColor(.black)
+                                    .frame(width: LeadingModifier.windowWidth()*0.80, alignment: .leading)
+                        })
+                        Image(systemName: "chevron.right")
+                    }
+                    Divider()
+                    
+                    HStack {
+                        NavigationLink(
+                            destination: EmptyView(),
+                            label: {
+                                Text("Give Us Feedback")
+                                    .foregroundColor(.black)
+                                    .frame(width: LeadingModifier.windowWidth()*0.84, alignment: .leading)
+                        })
+                    }
+                    
+                }
+
+            }
+            .frame(width: UIScreen.main.bounds.width * 0.9, height: 150, alignment: .leading)
             
-            
+
             Spacer()
         }
+        .navigationTitle("")
+        .navigationBarHidden(true)
     }
 }
 
