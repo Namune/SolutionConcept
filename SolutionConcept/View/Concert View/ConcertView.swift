@@ -59,7 +59,7 @@ struct ConcertView: View {
             .pickerStyle(SegmentedPickerStyle())
             .modifier(LeadingModifier())
             .padding()
-            ScrollView(.vertical){
+            ScrollView(.vertical, showsIndicators: false){
                 if segmen == 0{
                     EventDetails()
                 }else{

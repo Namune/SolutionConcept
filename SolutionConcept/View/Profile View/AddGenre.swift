@@ -43,7 +43,7 @@ struct AddGenre: View {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(Color("GoldYellow"), lineWidth: 1)
             ).padding()
-            ScrollView{
+            ScrollView(showsIndicators: false){
                 Image("genre")
                     .resizable()
                     .aspectRatio(contentMode: .fit)

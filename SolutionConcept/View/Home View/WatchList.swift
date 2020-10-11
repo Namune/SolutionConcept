@@ -13,7 +13,7 @@ struct WatchList: View {
     private var imageArray : [String] = ["lauv", "head"]
     
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(eventVM.listEventWL.indices, id: \.self) {idx in
                     VStack{

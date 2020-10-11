@@ -13,7 +13,7 @@ struct ScrollRecommendationView_Home: View {
     private var imageArray : [String] = ["java", "ellishP", "james", "raisa"]
     
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(eventVM.listEventRec.indices, id: \.self) {idx in
                     VStack{
@@ -46,7 +46,7 @@ struct ScrollRecommendationView_Home: View {
                     
                 }
             }
-        }
+        }   
     }
 }
 

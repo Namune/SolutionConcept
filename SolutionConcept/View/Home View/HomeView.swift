@@ -51,6 +51,7 @@ struct HomeView: View {
                     .padding()
                 // lagi ga ada search
                 if !isEditing{
+                    ScrollView(.vertical){
                     VStack {
                         HStack {
                             Text("Now Trending")
@@ -59,8 +60,9 @@ struct HomeView: View {
                                 .frame(width: UIScreen.main.bounds.width * 0.9, alignment: .leading)
                             
                         }
+                        
                         BannerView_Home().environmentObject(EventViewModel()).environmentObject(NavigationFlowObject())
-                        ScrollView(.vertical){
+                        
                             HStack {
                                 Text("Recommendation")
                                     .font(.title)

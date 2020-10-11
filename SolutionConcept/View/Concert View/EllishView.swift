@@ -61,7 +61,7 @@ struct EllishView: View {
 
             }
             
-            ScrollView(.vertical){
+            ScrollView(.vertical, showsIndicators: false){
                 if segmen == 0{
                     EllishDetail()
                 }else{

@@ -23,7 +23,7 @@ struct EllishDetail: View {
                     .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             }
             
-            ScrollView(.horizontal){
+            ScrollView(.horizontal, showsIndicators: false){
                 HStack{
                     VStack {
                         Image("ellishP")
