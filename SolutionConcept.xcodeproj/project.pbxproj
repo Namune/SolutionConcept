@@ -16,6 +16,7 @@
 		CA0EF12625337DA300A1307C /* AddGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12525337DA300A1307C /* AddGenre.swift */; };
 		CA0EF1292533842600A1307C /* EllishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1282533842600A1307C /* EllishView.swift */; };
 		CA0EF12C253384F800A1307C /* EllishDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12B253384F800A1307C /* EllishDetail.swift */; };
+		CA0EF12F25339EDD00A1307C /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12E25339EDD00A1307C /* EmoticonView.swift */; };
 		CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */; };
 		CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */; };
 		CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD62532ECE000ABB561 /* WatchList.swift */; };
@@ -56,6 +57,7 @@
 		CA0EF12525337DA300A1307C /* AddGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGenre.swift; sourceTree = "<group>"; };
 		CA0EF1282533842600A1307C /* EllishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllishView.swift; sourceTree = "<group>"; };
 		CA0EF12B253384F800A1307C /* EllishDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllishDetail.swift; sourceTree = "<group>"; };
+		CA0EF12E25339EDD00A1307C /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
 		CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistView.swift; sourceTree = "<group>"; };
 		CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrackView.swift; sourceTree = "<group>"; };
 		CA73ECD62532ECE000ABB561 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				CA0EF11E25334C6800A1307C /* VideoView.swift */,
+				CA0EF12E25339EDD00A1307C /* EmoticonView.swift */,
 			);
 			path = "Video View";
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				CAFF0AF125320252008D2FCB /* TicketPrice.swift in Sources */,
 				CAFF0AD22531C4E9008D2FCB /* BannerView_Home.swift in Sources */,
 				CAFF0AC92531A39A008D2FCB /* NotificationView.swift in Sources */,
+				CA0EF12F25339EDD00A1307C /* EmoticonView.swift in Sources */,
 				CAFF0AEE25320028008D2FCB /* EventDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
