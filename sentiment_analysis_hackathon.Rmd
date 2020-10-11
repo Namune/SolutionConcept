@@ -1,0 +1,111 @@
+---
+title: "Animated Wordcloud"
+author: "Vincentius Calvin"
+date: "8/31/2020"
+output: html_document
+---
+
+# Preparing the Data
+Some initial configuration. As a safety precaution we also clear our global environment.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=TRUE,warning = F, message = F)
+rm(list=ls())
+```
+# Unpacking the Package
+```{r}
+library(tm)
+library(SnowballC)
+library(syuzhet)
+library(wordcloud)
+library(ggplot2)
+library(gganimate)
+
+df <- read.csv('google_negative_review_with_date.csv', stringsAsFactors = F)
+head(df)
+```
+# Converting to date
+```{r}
+library(lubridate)
+
+df$at <- as.Date(df$at, "%Y-%m-%d %H:%M:%S") 
+df$month <- month(df$at) #Make a new variable of month
+df$year <- year(df$at)
+df
+```
+```{r}
+unique(df$type)
+```
+# Querying per category
+```{r}
+stock_logistics <- df[(df['stock_logistics'] == 1 & df['year'] == 2020 & df['month'] >= 3), c('review','month')]
+delivery_logistics <- df[df['delivery_logistics'] == 1 & df['year'] == 2020 & df['month'] >= 3, c('review','month')]
+customer_service <- df[df['customer_service'] == 1 & df['year'] == 2020 & df['month'] >= 3, c('review','month')]
+app_functionality <- df[df['app_functionality'] == 1 & df['year'] == 2020 & df['month'] >= 3, c('review','month')]
+service_functionality <- df[df['service_functionality'] == 1 & df['year'] == 2020 & df['month'] >= 3, c('review','month')]
+locational_constraints <- df[df['locational_constraints'] == 1 & df['year'] == 2020 & df['month'] >= 3, c('review','month')]
+
+```
+#Trying to get sentiment analysis
+```{r}
+sentiment <- get_nrc_sentiment(stock_logistics$review)
+text <- cbind(stock_logistics, sentiment)
+text <- text[,c(2:12)]
+text <- aggregate(. ~ month, text, sum)
+text
+```
+#Reshaping the dataframe using tidyr
+```{r}
+library(tidyr)
+text_pivoted <- pivot_longer(data = text, 
+                       cols = -month, 
+                       names_to = "sentiment", 
+                       values_to = "count")
+text_pivoted <- text_pivoted %>% mutate(count=as.integer(count))  %>% mutate(month=as.integer(month))
+text_pivoted
+```
+#Attemping to create the wordcloud
+
+```{r}
+text_pivoted <- aggregate(. ~ sentiment, text_pivoted, sum)
+text_pivoted
+```
+
+```{r}
+text_pivoted[text_pivoted$sentiment == 'negative',]$count = 10
+```
+
+
+```{r}
+gg <- text_pivoted %>%
+  ggplot(aes(x = sentiment, y = count)) +
+  geom_bar(stat='identity', aes(fill=count)) +
+  theme_tufte()
+gg
+```
+
+```{r}
+billie <- data.frame('word' = c('billie','eillish','love','heavenly','beautiful','wait','omg','surprise','suck','finneas','where','go','bad','tear','repeat','again','upcoming','top','sound','song','audio','buzz','lag','online','lovely','voice','best','ever','sadness','sad','sing','live','distance','home','premium','lovely'), 'freq' = c(100,88,74,64,55,50,47,45,43,39,28,17,15,15,15,14,13,12,12,12,11,10,8,8,31,12,8,7,8,7,8,11,12,44,38,29))
+```
+
+```{r}
+wordcloud2::wordcloud2(data=billie, shape = 'cartoid')
+```
+
+
+```{r}
+wordcloud(billie$word,freq = billie$freq,min.freq = 0 , random.color = F, ordered.colors = T, rot.per=0.35, 
+          colors=billie$freq)
+```
+
+```{r}
+gg <- text_pivoted %>%
+  ggplot(aes(label = sentiment, size=count)) +
+  scale_size() +
+  geom_text_wordcloud(aes(col=sentiment)) +
+  theme_classic()
+gg2 <- gg + transition_time(month) +
+  labs(title = 'Month: {frame_time}')
+animate(gg2, end_pause = 30,  width = 500, height = 500, renderer = gifski_renderer())
+anim_save("output.gif")
+```
+
