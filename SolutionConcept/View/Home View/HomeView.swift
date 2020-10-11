@@ -27,25 +27,26 @@ struct HomeView: View {
                     Spacer()
                     if isEditing{
                         HStack{
-                            Button(action: {
-                                searchItem = ""
-                            }, label: {
-                                Image(systemName: "xmark.circle")
-                                    .foregroundColor(.black)
-                            })
+//                            Button(action: {
+//                                searchItem = ""
+//                            }, label: {
+//                                Image(systemName: "xmark.circle")
+//                                    .foregroundColor(.black)
+//                            })
                             Button(action: {
                                 isEditing = false
                                 searchItem = ""
                                 hidekeyboard()
                             }, label: {
-                                Text("Cancel")
+                                Image(systemName: "xmark.circle")
                             })
+                            .padding(.trailing)
                         }
                     }
                 }
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.black, lineWidth: 1)
+                        .stroke(Color("GoldYellow"), lineWidth: 1)
                 )
                     .padding()
                 // lagi ga ada search

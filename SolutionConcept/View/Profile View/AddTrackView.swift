@@ -41,7 +41,7 @@ struct AddTrackView: View {
             }
             .overlay(
                 RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color("GoldYellow"), lineWidth: 1)
             ).padding()
             if searchItem == "Black"
             {
@@ -61,7 +61,7 @@ struct AddTrackView: View {
                         Text("Tract")
                             .padding(.horizontal)
                             .padding(2)
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(UIColor.green)))
+                            .background(RoundedRectangle(cornerRadius: 10).fill(Color("softButton")))
                             .padding()
                             .foregroundColor(.black)
                     })
@@ -106,7 +106,7 @@ struct RecArtist : View{
                     Text("Tract")
                         .padding(.horizontal)
                         .padding(2)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(UIColor.green)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("softButton")))
                         .padding()
                         
                 }

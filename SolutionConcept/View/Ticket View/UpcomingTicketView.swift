@@ -11,10 +11,16 @@ struct UpcomingTicketView: View {
     
     private var ImageArray : [String] = ["ellishP", "raisa", "lauv", "head"]
     @EnvironmentObject var eventVM : EventViewModel
+    @State var goView = false
     
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
+                NavigationLink(
+                    destination: EllishView(), isActive: $goView,
+                    label: {
+                        EmptyView()
+                    })
                 ForEach(eventVM.listEventUp.indices, id: \.self) {idx in
                     HStack{
                         Image(ImageArray[idx])
@@ -33,6 +39,9 @@ struct UpcomingTicketView: View {
                         }
                     }
                 }
+                    .onTapGesture(count: 1, perform: {
+                        goView = true
+                    })
             }
             }
         }

@@ -69,6 +69,7 @@ struct VideoView: View {
                 }
                 
             }
+            .padding(.top, -53)
             
             ZStack {
                 Color("concert")

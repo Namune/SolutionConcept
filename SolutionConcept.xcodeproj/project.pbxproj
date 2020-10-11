@@ -12,6 +12,10 @@
 		CA0EF1152533318900A1307C /* CheckoutPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1142533318900A1307C /* CheckoutPurchaseView.swift */; };
 		CA0EF11B25334A6900A1307C /* TicketPurchasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF11A25334A6900A1307C /* TicketPurchasedView.swift */; };
 		CA0EF11F25334C6800A1307C /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF11E25334C6800A1307C /* VideoView.swift */; };
+		CA0EF12325337C3F00A1307C /* FavGenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12225337C3F00A1307C /* FavGenreView.swift */; };
+		CA0EF12625337DA300A1307C /* AddGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12525337DA300A1307C /* AddGenre.swift */; };
+		CA0EF1292533842600A1307C /* EllishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1282533842600A1307C /* EllishView.swift */; };
+		CA0EF12C253384F800A1307C /* EllishDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12B253384F800A1307C /* EllishDetail.swift */; };
 		CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */; };
 		CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */; };
 		CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD62532ECE000ABB561 /* WatchList.swift */; };
@@ -48,6 +52,10 @@
 		CA0EF1142533318900A1307C /* CheckoutPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutPurchaseView.swift; sourceTree = "<group>"; };
 		CA0EF11A25334A6900A1307C /* TicketPurchasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPurchasedView.swift; sourceTree = "<group>"; };
 		CA0EF11E25334C6800A1307C /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		CA0EF12225337C3F00A1307C /* FavGenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavGenreView.swift; sourceTree = "<group>"; };
+		CA0EF12525337DA300A1307C /* AddGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGenre.swift; sourceTree = "<group>"; };
+		CA0EF1282533842600A1307C /* EllishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllishView.swift; sourceTree = "<group>"; };
+		CA0EF12B253384F800A1307C /* EllishDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllishDetail.swift; sourceTree = "<group>"; };
 		CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistView.swift; sourceTree = "<group>"; };
 		CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrackView.swift; sourceTree = "<group>"; };
 		CA73ECD62532ECE000ABB561 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
@@ -191,6 +199,8 @@
 				CAFF0ADD2531DFD1008D2FCB /* ConcertView.swift */,
 				CAFF0AED25320028008D2FCB /* EventDetails.swift */,
 				CAFF0AF025320252008D2FCB /* TicketPrice.swift */,
+				CA0EF1282533842600A1307C /* EllishView.swift */,
+				CA0EF12B253384F800A1307C /* EllishDetail.swift */,
 			);
 			path = "Concert View";
 			sourceTree = "<group>";
@@ -212,6 +222,8 @@
 				CA8A77932532B1300066EF7F /* SavedProfileView.swift */,
 				CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */,
 				CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */,
+				CA0EF12225337C3F00A1307C /* FavGenreView.swift */,
+				CA0EF12525337DA300A1307C /* AddGenre.swift */,
 			);
 			path = "Profile View";
 			sourceTree = "<group>";
@@ -308,6 +320,8 @@
 			files = (
 				CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */,
 				CA0EF11B25334A6900A1307C /* TicketPurchasedView.swift in Sources */,
+				CA0EF12325337C3F00A1307C /* FavGenreView.swift in Sources */,
+				CA0EF12625337DA300A1307C /* AddGenre.swift in Sources */,
 				CA0EF1152533318900A1307C /* CheckoutPurchaseView.swift in Sources */,
 				CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */,
 				CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */,
@@ -321,7 +335,9 @@
 				CA0EF10B2533277800A1307C /* NavigationData.swift in Sources */,
 				CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */,
 				CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */,
+				CA0EF12C253384F800A1307C /* EllishDetail.swift in Sources */,
 				CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */,
+				CA0EF1292533842600A1307C /* EllishView.swift in Sources */,
 				CA73ECDB2532F84600ABB561 /* UpcomingTicketView.swift in Sources */,
 				CAFF0B04253224D6008D2FCB /* NotifTable.swift in Sources */,
 				CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */,
