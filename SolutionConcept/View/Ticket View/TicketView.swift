@@ -30,9 +30,11 @@ struct TicketView: View {
             .padding()
             if segmen == 0{
                 UpcomingTicketView().environmentObject(EventViewModel())
+                    .modifier(LeadingModifier())
                 Spacer()
             }else{
                 PastTicketView()
+                    .modifier(LeadingModifier())
                 Spacer()
             }
         }

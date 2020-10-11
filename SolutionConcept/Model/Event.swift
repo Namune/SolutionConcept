@@ -35,8 +35,8 @@ class EventViewModel : ObservableObject {
     ]
     @Published var listEventUp: [Event] = [
         Event(id: UUID(), name: "Where Do We Go", desc: "Saturday, 27 June 2020", time: "18.00 - 21.00 WIB"),
-        Event(id: UUID(), name: "Live in Concert",desc: "Sunday, 25 Oct 2020", time: "16.00 - 20.00 WIB"),
         Event(id: UUID(), name: "LAUV Summer Tour", desc: "Monday, 14 Sep 2020", time: "18.00 - 21.00 WIB"),
+        Event(id: UUID(), name: "Coachella Valley Music",desc: "Sunday, 25 Oct 2020", time: "16.00 - 20.00 WIB"),
         Event(id: UUID(), name: "Heads in The Clouds", desc: "Saturday, 15 Aug 2020", time: "19.00 - 22.00 WIB"),
     ]
 }

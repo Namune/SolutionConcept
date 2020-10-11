@@ -32,8 +32,8 @@ struct TrackedArtistView: View {
                             .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.1, alignment: .center)
                         Text(name[idx])
                         Spacer()
-                        Text("Untract")
-                            .padding(4)
+                        Text("Untrack")
+                            .padding(8)
                             .background(RoundedRectangle(cornerRadius: 10).fill(Color("softButton")))
                     }
                 }

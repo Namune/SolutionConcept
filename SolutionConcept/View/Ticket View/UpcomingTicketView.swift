@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UpcomingTicketView: View {
     
-    private var ImageArray : [String] = ["ellishP", "raisa", "lauv", "head"]
+    private var ImageArray : [String] = ["ellishK", "lauvK", "coachK", "headK"]
     @EnvironmentObject var eventVM : EventViewModel
     @State var goView = false
     
@@ -24,6 +24,10 @@ struct UpcomingTicketView: View {
                 ForEach(eventVM.listEventUp.indices, id: \.self) {idx in
                     HStack{
                         Image(ImageArray[idx])
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 105, height: 105, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .padding()
                         VStack(alignment: .leading){
                             Text(eventVM.listEventUp[idx].name)
                                 .fontWeight(.medium)
