@@ -11,6 +11,7 @@ struct TicketView: View {
     
     @State private var segmen = 0
     var menu = ["Upcoming", "Past"]
+    @State var eventSegmen = true
     
     var body: some View {
         
@@ -19,15 +20,50 @@ struct TicketView: View {
                 .font(.system(size: 24, weight: .bold))
                 .padding()
                 .modifier(LeadingModifier())
-            Picker("", selection: $segmen) {
-                            ForEach(0..<menu.count) { index in
-                                Text(self.menu[index]).tag(index)
+            HStack {
+                VStack {
+                    Button(action: {
+                        eventSegmen = true
+                    }, label: {
+                        VStack {
+                            Text("Upcoming")
+                                .frame(width: UIScreen.main.bounds.width * 0.4)
+                                .foregroundColor(.black)
+                                .font(.system(size: 16, weight: .semibold))
+                            if eventSegmen{
+                                goldUnder()
+                            }else{
+                                whiteUnder()
                             }
                         }
-            .pickerStyle(SegmentedPickerStyle())
-            .modifier(LeadingModifier())
+                        
+                    })
+                }
+                VStack {
+                    Button(action: {
+                        eventSegmen = false
+                    }, label: {
+                        VStack {
+                            Text("Past")
+                                .frame(width: UIScreen.main.bounds.width * 0.4)
+                                .foregroundColor(.black)
+                                .font(.system(size: 16, weight: .semibold))
+                            if !eventSegmen{
+                                goldUnder()
+                            }else{
+                                whiteUnder()
+                            }
+                        }
+                        
+                    })
+                    
+                    
+                }
+                
+            }
+            .frame(width: UIScreen.main.bounds.width)
             .padding()
-            if segmen == 0{
+            if eventSegmen{
                 UpcomingTicketView().environmentObject(EventViewModel())
                     .modifier(LeadingModifier())
                 Spacer()
