@@ -38,7 +38,7 @@ struct TicketConfirmationView: View {
                     Image("3tix")
                         .padding()
                     VStack(alignment :.leading){
-                        Text("Invite your friends and get cheaper bundle!")
+                        Text("Bestfriends Forever")
                             .fontWeight(.bold)
                             .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         Text("3 x Coachella Gold Ticket")
