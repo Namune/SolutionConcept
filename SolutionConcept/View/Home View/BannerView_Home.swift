@@ -10,12 +10,22 @@ import SwiftUI
 struct BannerView_Home: View {
     
     @EnvironmentObject var eventVM : EventViewModel
-    private var imageArray : [String] = ["coach","ellish","super8"]
+    private var imageArray : [String] =
+        ["coach","ellish","super8"]
+    @State var goActive : Bool = false
     
     var body: some View {
         TabView{
             ForEach(eventVM.listEvent.indices, id: \.self) {idx in
                 VStack{
+                    NavigationLink(
+                        destination: ConcertView(), isActive: $goActive)
+                            {
+                            EmptyView()
+                            }
+//                    NavigationLink(destination: FinalResult(), isActive: $navigationFlow.finalIsActive) {
+//                        EmptyView()
+//                    }.isDetailLink(false)
 //                    Text(eventVM.listEvent[idx].name)
 //                    Text(eventVM.listEvent[idx].desc)
                     Image(imageArray[idx])
@@ -25,6 +35,10 @@ struct BannerView_Home: View {
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(Color.yellow, lineWidth: 2)
                             )
+                        .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
+                            goActive = true
+                        })
+                    
                     }
                 }
             

@@ -80,7 +80,7 @@ struct HomeView: View {
                                     .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                                     .padding(.top, 5)
                             }
-                            ScrollRecommendationView_Home().environmentObject(EventViewModel())
+                            WatchList().environmentObject(EventViewModel())
                                 .padding(.horizontal)
                         }
                         
@@ -88,14 +88,6 @@ struct HomeView: View {
                     }
                     
                     Spacer()
-                    VStack{
-                        NavigationLink(
-                            destination: ConcertView(),
-                            label: {
-                                Text("Navigate")
-                            })
-                        Text("Ini Home")
-                    }
                     
                 //ada yang di search
                 }else if searchItem == "Search"{
