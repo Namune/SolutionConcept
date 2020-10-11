@@ -28,7 +28,9 @@ struct ConcertView: View {
             Group{
                 HStack {
                     Text("Coachella Valley Music And Arts Festival")
-                        .font(.title)
+                        //.font(.title)
+                        .font(.system(size: 20, weight:.bold))
+                        .padding(.bottom, 5.0)
                         .frame(width: UIScreen.main.bounds.width * 0.8, alignment: .leading)
                     Image(systemName: "square.and.arrow.up")
                     Button(action: {
@@ -43,11 +45,13 @@ struct ConcertView: View {
                 HStack {
                     Image(systemName: "calendar")
                     Text("Saturday, 23 March 2021")
+                        .font(.system(size: 12))
                 }
                 .modifier(LeadingModifier())
                 HStack {
                     Image(systemName: "clock")
                     Text("11.00 - 21.00 WIB")
+                        .font(.system(size: 12))
                 }
                 .modifier(LeadingModifier())
             }
@@ -60,6 +64,7 @@ struct ConcertView: View {
                             Text("Concert Details")
                                 .frame(width: UIScreen.main.bounds.width * 0.4)
                                 .foregroundColor(.black)
+                                .font(.system(size: 16, weight: .semibold))
                             if eventSegmen{
                                 goldUnder()
                             }else{
@@ -83,6 +88,7 @@ struct ConcertView: View {
                             Text("Ticket Categories")
                                 .frame(width: UIScreen.main.bounds.width * 0.4)
                                 .foregroundColor(.black)
+                                .font(.system(size: 16, weight: .semibold))
                             if !eventSegmen{
                                 goldUnder()
                             }else{
