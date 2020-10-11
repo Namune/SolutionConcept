@@ -10,11 +10,12 @@ import SwiftUI
 struct PersonalInfoView: View {
     var body: some View {
         VStack {
-            Text("Ini Image")
+            Image("katie")
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            Text("Change profil picture")
-                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-            Divider()
+                .padding()
+            Text("Personal")
+                .fontWeight(.bold)
+                .modifier(LeadingModifier())
             List{
                 HStack{
                     Text("Name")
@@ -38,8 +39,45 @@ struct PersonalInfoView: View {
                 }
 
             }
+            .frame(height : UIScreen.main.bounds.height * 0.2)
+            .padding(5)
+            Text("Shipping")
+                .fontWeight(.bold)
+                .modifier(LeadingModifier())
+            List{
+                HStack{
+                    Text("Address")
+                        .frame(width: UIScreen.main.bounds.width * 0.4,alignment: .leading)
+                    Text("Moon Valley Park, 32")
+                }
+                HStack{
+                    Text("City")
+                        .frame(width: UIScreen.main.bounds.width * 0.4,alignment: .leading)
+                    Text("Surabaya")
+                }
+                HStack{
+                    Text("State")
+                        .frame(width: UIScreen.main.bounds.width * 0.4,alignment: .leading)
+                    Text("Jawa Timur")
+                }
+                HStack{
+                    Text("Country")
+                        .frame(width: UIScreen.main.bounds.width * 0.4,alignment: .leading)
+                    Text("Indonesia")
+                }
+                HStack{
+                    Text("Postal Code")
+                        .frame(width: UIScreen.main.bounds.width * 0.4,alignment: .leading)
+                    Text("60123")
+                }
+
+            }
+            .padding(5)
                 
                 Spacer()
+            Text("Log Out")
+                .fontWeight(.bold)
+                        .foregroundColor(.red)
                 
                 
                 .navigationBarTitle("Account Information", displayMode: .inline)

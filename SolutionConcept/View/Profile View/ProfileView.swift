@@ -11,18 +11,12 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         VStack {
-            ZStack {
-                Color.init(UIColor.green)
-                    .frame(width: UIScreen.main.bounds.width * 1, height: UIScreen.main.bounds.height * 0.3, alignment: .center)
-                    .edgesIgnoringSafeArea(.all)
-                    .padding(.bottom, -20)
-                VStack{
-                    Text("Ini Image")
-                    Text("Name")
-                }
-
+            VStack{
+                Image("katie")
+                    .padding()
+                Text("Katie Wilson")
+                    .padding(.bottom)
             }
-            
             ZStack{
                 RoundedRectangle(cornerRadius: 10, style: .continuous)
                     .fill(Color("soft"))
@@ -42,7 +36,7 @@ struct ProfileView: View {
                     
                     HStack {
                         NavigationLink(
-                            destination: SavedProfileView(),
+                            destination: SavedProfileView().environmentObject(ContactViewModel()),
                             label: {
                                 Text("Saved profiles")
                                     .foregroundColor(.black)
