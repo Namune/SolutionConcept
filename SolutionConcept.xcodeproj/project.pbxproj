@@ -17,6 +17,8 @@
 		CA0EF1292533842600A1307C /* EllishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1282533842600A1307C /* EllishView.swift */; };
 		CA0EF12C253384F800A1307C /* EllishDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12B253384F800A1307C /* EllishDetail.swift */; };
 		CA0EF12F25339EDD00A1307C /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12E25339EDD00A1307C /* EmoticonView.swift */; };
+		CA67D2552533AE9000B82872 /* PromotorHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67D2542533AE9000B82872 /* PromotorHomeView.swift */; };
+		CA67D2582533B08400B82872 /* PromotorStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67D2572533B08400B82872 /* PromotorStatView.swift */; };
 		CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */; };
 		CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */; };
 		CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD62532ECE000ABB561 /* WatchList.swift */; };
@@ -58,6 +60,8 @@
 		CA0EF1282533842600A1307C /* EllishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllishView.swift; sourceTree = "<group>"; };
 		CA0EF12B253384F800A1307C /* EllishDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllishDetail.swift; sourceTree = "<group>"; };
 		CA0EF12E25339EDD00A1307C /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
+		CA67D2542533AE9000B82872 /* PromotorHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotorHomeView.swift; sourceTree = "<group>"; };
+		CA67D2572533B08400B82872 /* PromotorStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotorStatView.swift; sourceTree = "<group>"; };
 		CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistView.swift; sourceTree = "<group>"; };
 		CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrackView.swift; sourceTree = "<group>"; };
 		CA73ECD62532ECE000ABB561 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 		CA67D2522533ADEF00B82872 /* Promotor */ = {
 			isa = PBXGroup;
 			children = (
+				CA67D2542533AE9000B82872 /* PromotorHomeView.swift */,
+				CA67D2572533B08400B82872 /* PromotorStatView.swift */,
 			);
 			path = Promotor;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 				CA73ECDB2532F84600ABB561 /* UpcomingTicketView.swift in Sources */,
 				CAFF0B04253224D6008D2FCB /* NotifTable.swift in Sources */,
 				CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */,
+				CA67D2552533AE9000B82872 /* PromotorHomeView.swift in Sources */,
 				CA0EF1112533316C00A1307C /* TicketConfirmationView.swift in Sources */,
 				CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */,
 				CA8A77972532B2460066EF7F /* Contact.swift in Sources */,
@@ -362,6 +369,7 @@
 				CAFF0AF125320252008D2FCB /* TicketPrice.swift in Sources */,
 				CAFF0AD22531C4E9008D2FCB /* BannerView_Home.swift in Sources */,
 				CAFF0AC92531A39A008D2FCB /* NotificationView.swift in Sources */,
+				CA67D2582533B08400B82872 /* PromotorStatView.swift in Sources */,
 				CA0EF12F25339EDD00A1307C /* EmoticonView.swift in Sources */,
 				CAFF0AEE25320028008D2FCB /* EventDetails.swift in Sources */,
 			);
