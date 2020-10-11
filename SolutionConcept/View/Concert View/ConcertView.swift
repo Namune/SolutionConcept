@@ -73,12 +73,6 @@ struct ConcertView: View {
                         }
                         
                     })
-
-                    
-
-                    
-                        
-                    
                 }
                 VStack {
                     Button(action: {
