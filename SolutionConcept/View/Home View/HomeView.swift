@@ -27,12 +27,6 @@ struct HomeView: View {
                     Spacer()
                     if isEditing{
                         HStack{
-//                            Button(action: {
-//                                searchItem = ""
-//                            }, label: {
-//                                Image(systemName: "xmark.circle")
-//                                    .foregroundColor(.black)
-//                            })
                             Button(action: {
                                 isEditing = false
                                 searchItem = ""
@@ -103,8 +97,6 @@ struct HomeView: View {
                 
                 Spacer()
             }
-//            .navigationBarTitle("Home")
-//            .navigationBarHidden(true)
         }
             
 

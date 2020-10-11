@@ -17,7 +17,8 @@ struct PromotorStatView: View {
                     .foregroundColor(.black)
                     .modifier(ButtonModifier())
             })
-            ScrollView{
+            .padding()
+            ScrollView(showsIndicators: false){
                 Image("stats")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
