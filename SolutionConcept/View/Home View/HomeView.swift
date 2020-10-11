@@ -55,17 +55,18 @@ struct HomeView: View {
                     VStack {
                         HStack {
                             Text("Now Trending")
-                                .font(.title)
+                                //.font(.title)
+                                .font(.system(size: 24))
                                 .fontWeight(.bold)
                                 .frame(width: UIScreen.main.bounds.width * 0.9, alignment: .leading)
                             
                         }
                         
-                        BannerView_Home().environmentObject(EventViewModel()).environmentObject(NavigationFlowObject())
+                        BannerView_Home().padding(.bottom).environmentObject(EventViewModel()).environmentObject(NavigationFlowObject())
                         
                             HStack {
                                 Text("Recommendation")
-                                    .font(.title)
+                                    .font(.system(size: 24))
                                     .fontWeight(.bold)
                                     .frame(width: UIScreen.main.bounds.width * 0.73, alignment: .leading)
                                 Text("Show all")
@@ -75,10 +76,10 @@ struct HomeView: View {
                                 .padding(.horizontal)
                             HStack {
                                 Text("Watch List")
-                                    .font(.title)
+                                    .font(.system(size: 24))
                                     .fontWeight(.bold)
                                     .frame(width: UIScreen.main.bounds.width * 0.73, alignment: .leading)
-                                    .padding(.top, 5)
+                                    .padding(.top, 16.0)
                                 Text("Show all")
                                     .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                                     .padding(.top, 5)

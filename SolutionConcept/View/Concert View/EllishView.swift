@@ -25,9 +25,9 @@ struct EllishView: View {
             Group{
                 HStack {
                     Text("“Where Do We Go” by Billie Eillish")
-                        .font(.title2)
+                        .font(.system(size: 20, weight:.bold))
                         .frame(width: UIScreen.main.bounds.width * 0.8, alignment: .leading)
-                        .padding(.bottom)
+                        .padding(.bottom, 5)
                     Image(systemName: "square.and.arrow.up")
                     Button(action: {
                             changeFav()}, label: {
@@ -42,11 +42,13 @@ struct EllishView: View {
                     HStack {
                         Image(systemName: "calendar")
                         Text("Saturday, 27 June 2020")
+                            .font(.system(size: 12))
                     }
                     .modifier(LeadingModifier())
                     HStack {
                         Image(systemName: "clock")
                         Text("18.00 - 21.00 WIB")
+                            .font(.system(size: 12))
                         Spacer()
                         NavigationLink(
                             destination: VideoView(),

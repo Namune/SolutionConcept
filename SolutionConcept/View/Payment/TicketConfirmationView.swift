@@ -19,6 +19,7 @@ struct TicketConfirmationView: View {
                     .frame(width: 105, height: 105, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 VStack(alignment: .leading) {
                     Text("Coachella Valley Music And Arts Festival")
+                        .font(.system(size: 16, weight: .bold))
                     HStack {
                         Image(systemName: "calendar")
                         Text("Saturday, 23 March 2021")
@@ -64,9 +65,13 @@ struct TicketConfirmationView: View {
             }
             .frame(width: UIScreen.main.bounds.width * 0.85, height: UIScreen.main.bounds.height * 0.18, alignment: .leading)
             .background(Color("soft"))
+            
+            //.border(Color.gray)
+            .cornerRadius(16)
             .padding()
             HStack {
                 Text("Quantity (pax)")
+                
                 Button(action: {
                     if jumlah <= 1{
                         

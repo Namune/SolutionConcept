@@ -15,9 +15,8 @@ struct TicketView: View {
     var body: some View {
         
         VStack {
-            Text("Concert For You")
-                .font(.title)
-                .fontWeight(.bold)
+            Text("Concerts For You")
+                .font(.system(size: 24, weight: .bold))
                 .padding()
                 .modifier(LeadingModifier())
             Picker("", selection: $segmen) {

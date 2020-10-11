@@ -30,12 +30,14 @@ struct ScrollRecommendationView_Home: View {
                                 Image(systemName: "calendar")
                                 Text(eventVM.listEventRec[idx].desc)
                                     .font(.caption)
+                                    .foregroundColor(Color.gray)
                             }.padding(1)
                             
                             HStack {
                                 Image(systemName: "clock")
                                 Text(eventVM.listEventRec[idx].time ?? "")
                                     .font(.caption)
+                                    .foregroundColor(Color.gray)
                             }
                             
                             
