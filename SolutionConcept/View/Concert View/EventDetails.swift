@@ -48,6 +48,22 @@ struct EventDetails: View {
                     
                 }.padding(.horizontal)
             }
+            HStack {
+                Text("Genres")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.top)
+                    .frame(width: UIScreen.main.bounds.width * 0.73, alignment: .leading)
+                Text("Show all")
+                    .padding(.top)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            }
+            ScrollView(.horizontal){
+                Image("pop")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.22, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            }
         }
         
     }
