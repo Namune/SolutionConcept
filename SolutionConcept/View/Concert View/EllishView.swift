@@ -25,8 +25,9 @@ struct EllishView: View {
             Group{
                 HStack {
                     Text("“Where Do We Go” by Billie Eillish")
-                        .font(.title)
+                        .font(.title2)
                         .frame(width: UIScreen.main.bounds.width * 0.8, alignment: .leading)
+                        .padding(.bottom)
                     Image(systemName: "square.and.arrow.up")
                     Button(action: {
                             changeFav()}, label: {
@@ -52,7 +53,7 @@ struct EllishView: View {
                             label: {
                                 Text("Watch Now")
                                     .foregroundColor(.black)
-                                    .padding(4)
+                                    .padding(6)
                                     .background(RoundedRectangle(cornerRadius: 10).fill(Color("GoldYellow")))
                             })
                     }

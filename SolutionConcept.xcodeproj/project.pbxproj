@@ -120,6 +120,13 @@
 			path = "Video View";
 			sourceTree = "<group>";
 		};
+		CA67D2522533ADEF00B82872 /* Promotor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Promotor;
+			sourceTree = "<group>";
+		};
 		CA73ECD92532F82400ABB561 /* Ticket View */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +160,7 @@
 				CAFF0AC32531A314008D2FCB /* View */,
 				CA0EF11D25334C4D00A1307C /* Video View */,
 				CAFF0AAB25319D7A008D2FCB /* AppDelegate.swift */,
+				CA67D2522533ADEF00B82872 /* Promotor */,
 				CAFF0AAD25319D7A008D2FCB /* SceneDelegate.swift */,
 				CAFF0AB125319D7A008D2FCB /* Assets.xcassets */,
 				CAFF0AB625319D7A008D2FCB /* LaunchScreen.storyboard */,
