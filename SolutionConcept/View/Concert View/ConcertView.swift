@@ -21,13 +21,24 @@ struct ConcertView: View {
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width * 1, height: UIScreen.main.bounds.height * 0.3, alignment: .center)
                     .edgesIgnoringSafeArea(.all)
-                    .padding(.bottom, -130)
+                    .padding(.bottom, -140)
                 
             }
             Group{
-                Text("Coachella Valley Music And Arts Festival")
-                    .font(.title)
-                    .modifier(LeadingModifier())
+                HStack {
+                    Text("Coachella Valley Music And Arts Festival")
+                        .font(.title)
+                        .frame(width: UIScreen.main.bounds.width * 0.8, alignment: .leading)
+                    Image(systemName: "square.and.arrow.up")
+                    Button(action: {
+                            changeFav()}, label: {
+                                if fav {
+                                    Image(systemName: "heart.fill")
+                                }else {
+                                    Image(systemName: "heart")
+                                }
+                            })
+                }
                 HStack {
                     Image(systemName: "calendar")
                     Text("Saturday, 23 March 2021")
@@ -56,19 +67,7 @@ struct ConcertView: View {
                 }
             }
 
-        }.navigationBarItems(trailing:
-                                HStack {
-                                    Image(systemName: "square.and.arrow.up")
-                                    Button(action: {
-                                            changeFav()}, label: {
-                                                if fav {
-                                                    Image(systemName: "heart.fill")
-                                                }else {
-                                                    Image(systemName: "heart")
-                                                }
-                                            })
-                                    
-                                })
+        }
         
         }
 }

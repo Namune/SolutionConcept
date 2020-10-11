@@ -55,7 +55,7 @@ struct ProfileView: View {
                 VStack{
                     HStack {
                         NavigationLink(
-                            destination: TrackedArtistView(),
+                            destination: TrackedArtistView().environmentObject(NavigationData()),
                             label: {
                                 Text("Tracked Artist")
                                     .foregroundColor(.black)

@@ -9,40 +9,45 @@ import SwiftUI
 
 struct TrackedArtistView: View {
     
+    @EnvironmentObject var navVM : NavigationData
+    private var imageArray = ["adamB","justinB","ellishB","raisaB","tulusB"]
+    private var name = ["Adam Lavine","Justin Bieber","Billie Ellish","Raisa","Tulus"]
+    
     @State var add : Bool = false
     
     var body: some View {
-        if add{
-            AddTrackView()
-                .navigationBarTitle("Tracked Artist", displayMode: .inline)
-                .navigationBarItems(trailing:
-                                        Button(action: {
-                                            changeAdd()
-                                        }, label: {
-                                            Text("Done")
-                                        }))
-        }else{
-            VStack {
-                List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+        ScrollView(.vertical) {
+            VStack(alignment: .leading) {
+                NavigationLink(
+                    destination: AddTrackView().environmentObject(NavigationData()),
+                    isActive: $navVM.navToggle,
+                    label: {
+                        EmptyView()
+                    })
+                ForEach(imageArray.indices, id: \.self) { idx in
                     HStack {
-                        Text("Ini Image")
-                            .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.14, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            .background(Color.init(UIColor.green))
-                            .padding(.leading)
-                        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                        Image(imageArray[idx])
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.1, alignment: .center)
+                        Text(name[idx])
+                        Spacer()
+                        Text("Untract")
+                            .padding(4)
+                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(UIColor.green)))
                     }
                 }
                 .padding()
 
             }
+            .frame(width: UIScreen.main.bounds.width, alignment: .leading)
             .navigationBarTitle("Tracked Artist", displayMode: .inline)
             .navigationBarItems(trailing:
                                     Button(action: {
                                         changeAdd()
                                     }, label: {
                                         Text("Add")
-                                    }))
-            
+                                }))
         }
 
         
@@ -53,10 +58,11 @@ struct TrackedArtistView: View {
 extension TrackedArtistView{
     func changeAdd(){
         add.toggle()
+        navVM.navToggle = true
     }
 }
 struct TrackedArtistView_Previews: PreviewProvider {
     static var previews: some View {
-        TrackedArtistView()
+        TrackedArtistView().environmentObject(NavigationData())
     }
 }

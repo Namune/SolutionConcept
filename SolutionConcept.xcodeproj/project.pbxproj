@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0EF10B2533277800A1307C /* NavigationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF10A2533277800A1307C /* NavigationData.swift */; };
+		CA0EF1112533316C00A1307C /* TicketConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1102533316C00A1307C /* TicketConfirmationView.swift */; };
+		CA0EF1152533318900A1307C /* CheckoutPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1142533318900A1307C /* CheckoutPurchaseView.swift */; };
 		CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */; };
 		CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */; };
 		CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD62532ECE000ABB561 /* WatchList.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA0EF10A2533277800A1307C /* NavigationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationData.swift; sourceTree = "<group>"; };
+		CA0EF1102533316C00A1307C /* TicketConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketConfirmationView.swift; sourceTree = "<group>"; };
+		CA0EF1142533318900A1307C /* CheckoutPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutPurchaseView.swift; sourceTree = "<group>"; };
 		CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistView.swift; sourceTree = "<group>"; };
 		CA73ECD32532BD2E00ABB561 /* AddTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrackView.swift; sourceTree = "<group>"; };
 		CA73ECD62532ECE000ABB561 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
@@ -81,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0EF10F2533315100A1307C /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				CA0EF1102533316C00A1307C /* TicketConfirmationView.swift */,
+				CA0EF1142533318900A1307C /* CheckoutPurchaseView.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		CA73ECD92532F82400ABB561 /* Ticket View */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +151,7 @@
 				CAFF0AAF25319D7A008D2FCB /* ContentView.swift */,
 				CAFF0B00253220D8008D2FCB /* Home View */,
 				CAFF0AEB2531FE54008D2FCB /* Concert View */,
+				CA0EF10F2533315100A1307C /* Payment */,
 				CAFF0AF325320DBC008D2FCB /* Custom Modifier */,
 				CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */,
 				CA73ECD92532F82400ABB561 /* Ticket View */,
@@ -150,6 +166,7 @@
 			children = (
 				CAFF0AD52531C77E008D2FCB /* Event.swift */,
 				CA8A77962532B2460066EF7F /* Contact.swift */,
+				CA0EF10A2533277800A1307C /* NavigationData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAFF0AAC25319D7A008D2FCB /* AppDelegate.swift in Sources */,
+				CA0EF1152533318900A1307C /* CheckoutPurchaseView.swift in Sources */,
 				CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */,
 				CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */,
 				CA8A77942532B1300066EF7F /* SavedProfileView.swift in Sources */,
@@ -284,12 +302,14 @@
 				CAFF0AE92531FAD9008D2FCB /* LeadingModifier.swift in Sources */,
 				CAFF0AC62531A38F008D2FCB /* TicketView.swift in Sources */,
 				CAFF0AC12531A2E5008D2FCB /* HomeView.swift in Sources */,
+				CA0EF10B2533277800A1307C /* NavigationData.swift in Sources */,
 				CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */,
 				CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */,
 				CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */,
 				CA73ECDB2532F84600ABB561 /* UpcomingTicketView.swift in Sources */,
 				CAFF0B04253224D6008D2FCB /* NotifTable.swift in Sources */,
 				CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */,
+				CA0EF1112533316C00A1307C /* TicketConfirmationView.swift in Sources */,
 				CAFF0ADE2531DFD1008D2FCB /* ConcertView.swift in Sources */,
 				CA8A77972532B2460066EF7F /* Contact.swift in Sources */,
 				CAFF0AB025319D7A008D2FCB /* ContentView.swift in Sources */,

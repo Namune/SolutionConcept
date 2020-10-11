@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddTrackView: View {
     
+    @EnvironmentObject var navVM : NavigationData
     @State var isEditing : Bool = false
     @State var searchItem : String = ""
     
@@ -42,37 +43,51 @@ struct AddTrackView: View {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.black, lineWidth: 1)
             ).padding()
-            if searchItem == "Adam"
+            if searchItem == "Black"
             {
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("Ini Image")
-                            .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.14, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            .background(Color.init(UIColor.green))
+                        Image("blackpinkB")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.1, alignment: .center)
+                            .padding(.leading, -18)
                     
-                    Text("Adam Smith")
+                    Text("BlackPink")
+                        Spacer()
                     Button(action: {
                         print("order")
                     }, label: {
-                        Text("Track")
-                            .frame(width: UIScreen.main.bounds.width * 0.15)
-                            .background(RoundedRectangle(cornerRadius: 40).fill(Color(UIColor.green)))
-                            .padding(.leading, 70)
+                        Text("Tract")
+                            .padding(.horizontal)
+                            .padding(2)
+                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(UIColor.green)))
+                            .padding()
                             .foregroundColor(.black)
                     })
                     
                     }
                     .padding(.leading)
+                    
                     Divider()
                 }
             }
             RecArtist()
             Spacer()
         }
+        .frame(width: UIScreen.main.bounds.width, alignment: .leading)
+        .navigationBarTitle("Tracked Artist", displayMode: .inline)
+        
     }
+
 }
 
 struct RecArtist : View{
+    
+    private var imageArray = ["daveB","btsB"]
+    private var name = ["Dave Koz","BTS"]
+
+    
     var body : some View{
         VStack (alignment: .leading) {
             Text("Recommended Artist")
@@ -80,23 +95,20 @@ struct RecArtist : View{
                 .fontWeight(.bold)
                 .modifier(LeadingModifier())
                 .padding(.leading)
-            List(0..<2) { item in
+            ForEach(imageArray.indices, id: \.self) { idx in
                 HStack {
-                    Text("Ini Image")
-                        .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.14, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .background(Color.init(UIColor.green))
-                
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                Button(action: {
-                    print("order")
-                }, label: {
-                    Text("Track")
-                        .frame(width: UIScreen.main.bounds.width * 0.15)
-                        .background(RoundedRectangle(cornerRadius: 40).fill(Color(UIColor.green)))
-                        .padding(.leading, 70)
-                        .foregroundColor(.black)
-                })
-                
+                    Image(imageArray[idx])
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.1, alignment: .center)
+                    Text(name[idx])
+                    Spacer()
+                    Text("Tract")
+                        .padding(.horizontal)
+                        .padding(2)
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(UIColor.green)))
+                        .padding()
+                        
                 }
             }
             .padding(.top)
@@ -110,6 +122,6 @@ extension AddTrackView{
 }
 struct AddTrackView_Previews: PreviewProvider {
     static var previews: some View {
-        AddTrackView()
+        AddTrackView().environmentObject(NavigationData())
     }
 }
