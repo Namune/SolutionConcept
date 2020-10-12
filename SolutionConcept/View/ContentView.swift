@@ -33,7 +33,8 @@ struct ContentView: View {
                 
             }
             FloatingTabbar(selected: $selected)
-                .padding()
+//                .padding()
+                .shadow(radius: 5)
         }
                 
     }
@@ -115,27 +116,28 @@ struct FloatingTabbar : View {
                         
                         Image(systemName: "person.circle.fill").foregroundColor(self.selected == 3 ? .black : .gray).padding(.horizontal)
                     }
-                    
-                    Spacer(minLength: 10)
-                    
-                    Button(action: {
-                        
-                        expand.toggle()
-                        
-                    }) {
-                        
-                        Image(systemName: "arrow.right").foregroundColor(.black).padding()
-                    }
+                    //expand arrow
+//                    Spacer(minLength: 10)
+//
+//                    Button(action: {
+//
+//                        expand.toggle()
+//
+//                    }) {
+//
+//                        Image(systemName: "arrow.right").foregroundColor(.black).padding()
+//                    }
                 }
                 
                 
-            }.padding(.vertical,self.expand ? 7 : 8)
+            }.padding(.vertical,self.expand ? 18 : 8)
             .padding(.horizontal,self.expand ? 25 : 8)
             .background(Color.white)
             .clipShape(Capsule())
             .padding(22)
             .onLongPressGesture {
                     self.expand.toggle()
+            
             }
             .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.6, blendDuration: 0.6))
         }
