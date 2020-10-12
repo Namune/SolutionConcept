@@ -64,9 +64,9 @@ struct TicketPrice: View {
                 Image("friend")
                     .padding()
                 VStack(alignment :.leading){
-                    Text("Invite your friends and get cheaper bundle!")
+                    Text("Intimate Couple")
                         .fontWeight(.bold)
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(.leading)
                     Text("2 x Coachella Gold Ticket")
                         .font(.caption)
                     Text("2 x Exclusive Merchandise (Photo + Sign)")
@@ -80,9 +80,9 @@ struct TicketPrice: View {
                 Image("3tix")
                     .padding()
                 VStack(alignment :.leading){
-                    Text("Invite your friends and get cheaper bundle!")
+                    Text("Bestfriends Forever")
                         .fontWeight(.bold)
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(.leading)
                     Text("3 x Coachella Gold Ticket")
                         .font(.caption)
                     Text("3 x Exclusive Merchandise (Photo + Sign)")
