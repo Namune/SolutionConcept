@@ -192,7 +192,6 @@
 				CAFF0AEB2531FE54008D2FCB /* Concert View */,
 				CA0EF10F2533315100A1307C /* Payment */,
 				CAFF0AF325320DBC008D2FCB /* Custom Modifier */,
-				CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */,
 				CA73ECD92532F82400ABB561 /* Ticket View */,
 				CAFF0B02253224BD008D2FCB /* Notification View */,
 				CAFF0AFB25321A12008D2FCB /* Profile View */,
@@ -249,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				CAFF0AC02531A2E5008D2FCB /* HomeView.swift */,
+				CAFF0ACE2531B7B6008D2FCB /* SearchView.swift */,
 				CAFF0AE42531E9F9008D2FCB /* ScrollRecommendationView_Home.swift */,
 				CA73ECD62532ECE000ABB561 /* WatchList.swift */,
 				CAFF0AD12531C4E9008D2FCB /* BannerView_Home.swift */,
