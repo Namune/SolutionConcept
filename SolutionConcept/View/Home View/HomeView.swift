@@ -88,7 +88,7 @@ struct HomeView: View {
                     Spacer()
                     
                 //ada yang di search
-                }else if searchItem == "Search"{
+                }else if searchItem == "Java"{
                     SearchView()
                 //nunggu result
                 }else{
