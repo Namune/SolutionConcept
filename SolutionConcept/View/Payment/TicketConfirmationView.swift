@@ -12,7 +12,6 @@ struct TicketConfirmationView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Concert Detail")
-                .font(.caption)
             HStack{
                 Image("coachT")
                     .resizable()
@@ -34,13 +33,12 @@ struct TicketConfirmationView: View {
                 }
             }
             Text("Choosen Ticket")
-                .font(.caption)
             VStack {
                 HStack{
                     Image("3tix")
                         .padding()
                     VStack(alignment :.leading){
-                        Text("Invite your friends and get cheaper bundle!")
+                        Text("Bestfriends Forever")
                             .fontWeight(.bold)
                             .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         Text("3 x Coachella Gold Ticket")

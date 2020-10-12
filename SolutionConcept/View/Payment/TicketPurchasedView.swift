@@ -10,6 +10,7 @@ import SwiftUI
 struct TicketPurchasedView: View {
     
     @EnvironmentObject var navFlow : NavigationFlowObject
+    @EnvironmentObject var appState : NavigationData
     
     var body: some View {
         VStack {
@@ -35,7 +36,7 @@ struct TicketPurchasedView: View {
             }
             
             Button(action: {
-//                navFlow.isActive = false
+                appState.reloadDashboard()
             }, label: {
                 Text("Back to Home")
                     .modifier(ButtonModifier())
@@ -48,6 +49,6 @@ struct TicketPurchasedView: View {
 
 struct TicketPurchasedView_Previews: PreviewProvider {
     static var previews: some View {
-        TicketPurchasedView().environmentObject(NavigationFlowObject())
+        TicketPurchasedView().environmentObject(NavigationFlowObject()).environmentObject(NavigationData())
     }
 }

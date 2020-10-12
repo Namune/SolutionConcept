@@ -11,6 +11,8 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var contentView : ContentView?
+    var appState : NavigationData?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -19,17 +21,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        contentView = ContentView()
+        appState = NavigationData()
+        
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
+            reloadDashboard()
+        }
+    }
+    func reloadDashboard() {
+        if let window = self.window {
+            window.rootViewController = UIHostingController(rootView:
+                contentView
+                    .environmentObject(appState!)
+            )
             window.makeKeyAndVisible()
         }
     }
-
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

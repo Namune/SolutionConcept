@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-final class NavigationFlowObject: ObservableObject {
-    @Published var isActive: Bool = false
-    @Published var finalIsActive : Bool = false
-}
-
 struct BannerView_Home: View {
     
     @EnvironmentObject var eventVM : EventViewModel
@@ -37,7 +32,7 @@ struct BannerView_Home: View {
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(Color.yellow, lineWidth: 2)
                             )
-                        .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
+                        .onTapGesture(perform: {
                             navFlow.isActive = true
                         })
                     
