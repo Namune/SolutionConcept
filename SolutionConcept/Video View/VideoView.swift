@@ -22,9 +22,7 @@ struct VideoView: View {
                         avPlayer.play()
                     }
                     .frame(height: UIScreen.main.bounds.height * 0.33)
-//                    .onTapGesture(count: 1, perform: {
-//                        emoticon.toggle()
-//                    })
+
                 if emoticon == true{
                     Image("heartemo")
                         .resizable()
@@ -50,15 +48,28 @@ struct VideoView: View {
                 }
                 
             }
-            .padding(.top, -53)
-            
+            .padding(.top, -120)
+            Image("live")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.top, -10)
+                .onTapGesture( perform: {
+                    showingActionSheet.toggle()
+                })
             ZStack {
                 Color("concert")
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     .frame(height: UIScreen.main.bounds.height * 0.65)
-                    .padding(.top, -10)
-                Image("chat")
-                    .resizable()
+                    .padding(.top, -20)
+                    .onTapGesture( perform: {
+                        emoticon.toggle()
+                    })
+                VStack {
+                    Image("chat")
+                        .resizable()
+                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+
+                }
                 
             }
             Spacer()
