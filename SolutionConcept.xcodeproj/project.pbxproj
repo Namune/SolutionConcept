@@ -17,6 +17,10 @@
 		CA0EF1292533842600A1307C /* EllishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF1282533842600A1307C /* EllishView.swift */; };
 		CA0EF12C253384F800A1307C /* EllishDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12B253384F800A1307C /* EllishDetail.swift */; };
 		CA0EF12F25339EDD00A1307C /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EF12E25339EDD00A1307C /* EmoticonView.swift */; };
+		CA5768402533F41D00C83BF3 /* Onboarding1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57683F2533F41D00C83BF3 /* Onboarding1View.swift */; };
+		CA5768442533F4B400C83BF3 /* Onboarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5768432533F4B400C83BF3 /* Onboarding2View.swift */; };
+		CA57684B2533F4E000C83BF3 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57684A2533F4E000C83BF3 /* Onboarding3View.swift */; };
+		CA57684E2533F51000C83BF3 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57684D2533F51000C83BF3 /* OnBoarding.swift */; };
 		CA67D2552533AE9000B82872 /* PromotorHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67D2542533AE9000B82872 /* PromotorHomeView.swift */; };
 		CA67D2582533B08400B82872 /* PromotorStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67D2572533B08400B82872 /* PromotorStatView.swift */; };
 		CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */; };
@@ -60,6 +64,10 @@
 		CA0EF1282533842600A1307C /* EllishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllishView.swift; sourceTree = "<group>"; };
 		CA0EF12B253384F800A1307C /* EllishDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllishDetail.swift; sourceTree = "<group>"; };
 		CA0EF12E25339EDD00A1307C /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
+		CA57683F2533F41D00C83BF3 /* Onboarding1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1View.swift; sourceTree = "<group>"; };
+		CA5768432533F4B400C83BF3 /* Onboarding2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2View.swift; sourceTree = "<group>"; };
+		CA57684A2533F4E000C83BF3 /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
+		CA57684D2533F51000C83BF3 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		CA67D2542533AE9000B82872 /* PromotorHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotorHomeView.swift; sourceTree = "<group>"; };
 		CA67D2572533B08400B82872 /* PromotorStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotorStatView.swift; sourceTree = "<group>"; };
 		CA73ECD02532B93C00ABB561 /* TrackedArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistView.swift; sourceTree = "<group>"; };
@@ -122,6 +130,17 @@
 				CA0EF12E25339EDD00A1307C /* EmoticonView.swift */,
 			);
 			path = "Video View";
+			sourceTree = "<group>";
+		};
+		CA57683E2533F40200C83BF3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CA57683F2533F41D00C83BF3 /* Onboarding1View.swift */,
+				CA5768432533F4B400C83BF3 /* Onboarding2View.swift */,
+				CA57684A2533F4E000C83BF3 /* Onboarding3View.swift */,
+				CA57684D2533F51000C83BF3 /* OnBoarding.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		CA67D2522533ADEF00B82872 /* Promotor */ = {
@@ -187,6 +206,7 @@
 		CAFF0AC32531A314008D2FCB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA57683E2533F40200C83BF3 /* Onboarding */,
 				CAFF0AAF25319D7A008D2FCB /* ContentView.swift */,
 				CAFF0B00253220D8008D2FCB /* Home View */,
 				CAFF0AEB2531FE54008D2FCB /* Concert View */,
@@ -341,6 +361,7 @@
 				CA0EF12625337DA300A1307C /* AddGenre.swift in Sources */,
 				CA0EF1152533318900A1307C /* CheckoutPurchaseView.swift in Sources */,
 				CA73ECD72532ECE000ABB561 /* WatchList.swift in Sources */,
+				CA5768442533F4B400C83BF3 /* Onboarding2View.swift in Sources */,
 				CAFF0AE52531E9F9008D2FCB /* ScrollRecommendationView_Home.swift in Sources */,
 				CA8A77942532B1300066EF7F /* SavedProfileView.swift in Sources */,
 				CA0EF11F25334C6800A1307C /* VideoView.swift in Sources */,
@@ -348,14 +369,17 @@
 				CA73ECD12532B93C00ABB561 /* TrackedArtistView.swift in Sources */,
 				CAFF0AE92531FAD9008D2FCB /* LeadingModifier.swift in Sources */,
 				CAFF0AC62531A38F008D2FCB /* TicketView.swift in Sources */,
+				CA5768402533F41D00C83BF3 /* Onboarding1View.swift in Sources */,
 				CAFF0AC12531A2E5008D2FCB /* HomeView.swift in Sources */,
 				CA0EF10B2533277800A1307C /* NavigationData.swift in Sources */,
+				CA57684B2533F4E000C83BF3 /* Onboarding3View.swift in Sources */,
 				CAFF0AAE25319D7A008D2FCB /* SceneDelegate.swift in Sources */,
 				CAFF0AD62531C77E008D2FCB /* Event.swift in Sources */,
 				CA0EF12C253384F800A1307C /* EllishDetail.swift in Sources */,
 				CAFF0ACF2531B7B6008D2FCB /* SearchView.swift in Sources */,
 				CA0EF1292533842600A1307C /* EllishView.swift in Sources */,
 				CA73ECDB2532F84600ABB561 /* UpcomingTicketView.swift in Sources */,
+				CA57684E2533F51000C83BF3 /* OnBoarding.swift in Sources */,
 				CAFF0B04253224D6008D2FCB /* NotifTable.swift in Sources */,
 				CA73ECD42532BD2E00ABB561 /* AddTrackView.swift in Sources */,
 				CA67D2552533AE9000B82872 /* PromotorHomeView.swift in Sources */,
